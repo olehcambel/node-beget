@@ -21,7 +21,7 @@
 
 • **inputFormat**? : *"plain" | "json"*
 
-*Defined in [src/options/beget-options.ts:5](https://github.com/olehcambel/node-beget/blob/1fa682a/src/options/beget-options.ts#L5)*
+*Defined in [src/options/beget-options.ts:5](https://github.com/olehcambel/node-beget/blob/2b6a521/src/options/beget-options.ts#L5)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **login**: *string*
 
-*Defined in [src/options/beget-options.ts:2](https://github.com/olehcambel/node-beget/blob/1fa682a/src/options/beget-options.ts#L2)*
+*Defined in [src/options/beget-options.ts:2](https://github.com/olehcambel/node-beget/blob/2b6a521/src/options/beget-options.ts#L2)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **outputFormat**? : *string*
 
-*Defined in [src/options/beget-options.ts:4](https://github.com/olehcambel/node-beget/blob/1fa682a/src/options/beget-options.ts#L4)*
+*Defined in [src/options/beget-options.ts:4](https://github.com/olehcambel/node-beget/blob/2b6a521/src/options/beget-options.ts#L4)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **password**: *string*
 
-*Defined in [src/options/beget-options.ts:3](https://github.com/olehcambel/node-beget/blob/1fa682a/src/options/beget-options.ts#L3)*
+*Defined in [src/options/beget-options.ts:3](https://github.com/olehcambel/node-beget/blob/2b6a521/src/options/beget-options.ts#L3)*

@@ -29,11 +29,11 @@ beget.user.toggleSsh(0);
 ```ts
 // if you need only one endpoint
 
-import { UserEndpoint, Beget } from 'node-beget';
+import { UserEndpoint, BegetRequest } from 'node-beget';
 
 const begetConfig = { login: 'login', password: 'password' };
-const beget = new Beget(begetConfig);
-const user = new UserEndpoint(beget);
+const begetClient = new BegetRequest(begetConfig);
+const user = new UserEndpoint(begetClient);
 
 // ...
 await user.getAccountInfo();

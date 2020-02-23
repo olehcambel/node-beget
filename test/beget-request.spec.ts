@@ -1,8 +1,9 @@
 import * as qs from 'qs';
 import { BegetRequest } from '../src';
 import { BegetError } from '../src/beget.error';
-import { ID, begetConfig } from './test-utils';
+import { BegetOptions, BegetRequestOptions } from '../src/options/beget-options';
 import * as BegetCommon from '../src/types/common.interface';
+import { begetConfig, ID } from './test-utils';
 
 describe('BegetRequest', () => {
     const section = 'user';
@@ -10,9 +11,16 @@ describe('BegetRequest', () => {
 
     describe('login', () => {
         it('saves beget config', () => {
+            const begetConfig: BegetOptions = { login: 'login', password: 'password' };
+            const expected: BegetRequestOptions = {
+                login: 'login',
+                passwd: 'password',
+                input_format: 'json',
+                output_format: 'json',
+            };
             const begetRequest = new BegetRequest(begetConfig);
 
-            expect(begetRequest['config']).toEqual(begetConfig);
+            expect(begetRequest['config']).toEqual(expected);
         });
 
         it('does add config to query', async () => {
@@ -27,11 +35,13 @@ describe('BegetRequest', () => {
 
             expect(beget['safeRequest']).toHaveBeenCalled();
             expect(beget['safeRequest']).toHaveBeenCalledWith({
-                searchParams: qs.stringify({
+                searchParams: {
                     login: begetConfig.login,
                     passwd: begetConfig.password,
-                    ...data,
-                }),
+                    input_format: 'json',
+                    output_format: 'json',
+                    input_data: qs.stringify(data),
+                },
                 url: [section, method].join('/'),
             });
         });

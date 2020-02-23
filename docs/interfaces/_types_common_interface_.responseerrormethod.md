@@ -19,7 +19,7 @@
 
 • **answer**: *object*
 
-*Defined in [src/types/common.interface.ts:13](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/common.interface.ts#L13)*
+*Defined in [src/types/common.interface.ts:13](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/common.interface.ts#L13)*
 
 #### Type declaration:
 
@@ -33,4 +33,4 @@ ___
 
 • **status**: *"success"*
 
-*Defined in [src/types/common.interface.ts:12](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/common.interface.ts#L12)*
+*Defined in [src/types/common.interface.ts:12](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/common.interface.ts#L12)*

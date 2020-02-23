@@ -10,6 +10,7 @@
 * [BegetClient](_index_.md#begetclient)
 * [BegetOptions](_index_.md#begetoptions)
 * [BegetRequest](_index_.md#begetrequest)
+* [DnsEndpoint](_index_.md#dnsendpoint)
 * [UserEndpoint](_index_.md#userendpoint)
 
 ## References
@@ -35,6 +36,12 @@ ___
 ###  BegetRequest
 
 • **BegetRequest**:
+
+___
+
+###  DnsEndpoint
+
+• **DnsEndpoint**:
 
 ___
 

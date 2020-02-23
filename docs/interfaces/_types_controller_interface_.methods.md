@@ -28,7 +28,7 @@
 
 • **backup**: *"getFileList" | "getMysqlList" | "restoreFile" | "restoreMysql" | "getFileBackupList" | "getMysqlBackupList" | "downloadFile" | "downloadMysql" | "getLog"*
 
-*Defined in [src/types/controller.interface.ts:3](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L3)*
+*Defined in [src/types/controller.interface.ts:3](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L3)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **cron**: *"getList" | "add" | "delete" | "changeHiddenState" | "getEmail" | "setEmail"*
 
-*Defined in [src/types/controller.interface.ts:13](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L13)*
+*Defined in [src/types/controller.interface.ts:13](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L13)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **dns**: *"getData" | "changeRecords"*
 
-*Defined in [src/types/controller.interface.ts:14](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L14)*
+*Defined in [src/types/controller.interface.ts:14](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L14)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **domains**: *"getList" | "getZoneList" | "addVirtual" | "delete" | "getSubdomainList" | "addSubdomainVirtual" | "deleteSubdomain" | "checkDomainToRegister" | "getPhpVersion" | "changePhpVersion" | "getDirectives" | "addDirectives" | "removeDirectives"*
 
-*Defined in [src/types/controller.interface.ts:32](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L32)*
+*Defined in [src/types/controller.interface.ts:32](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L32)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **dropMailbox**: *"changeMailboxSettings" | "forwardListAddMailbox" | "forwardListDeleteMailbox" | "forwardListShow" | "setDomainMail" | "clearDomainMail"*
 
-*Defined in [src/types/controller.interface.ts:47](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L47)*
+*Defined in [src/types/controller.interface.ts:47](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L47)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **ftp**: *"getList" | "add" | "changePassword" | "delete"*
 
-*Defined in [src/types/controller.interface.ts:15](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L15)*
+*Defined in [src/types/controller.interface.ts:15](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L15)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **mail**: *"getMailboxList" | "changeMailboxPassword" | "createMailbox"*
 
-*Defined in [src/types/controller.interface.ts:46](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L46)*
+*Defined in [src/types/controller.interface.ts:46](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L46)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **mysql**: *"getList" | "addDb" | "addAccess" | "dropDb" | "dropAccess" | "changeAccessPassword"*
 
-*Defined in [src/types/controller.interface.ts:16](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L16)*
+*Defined in [src/types/controller.interface.ts:16](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L16)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **sites**: *"getList" | "add" | "delete" | "linkDomain" | "unlinkDomain" | "freeze" | "unfreeze" | "isSiteFrozen"*
 
-*Defined in [src/types/controller.interface.ts:23](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L23)*
+*Defined in [src/types/controller.interface.ts:23](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L23)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **stat**: *"getSiteListLoad" | "getDbListLoad" | "getSiteLoad" | "getDbLoad"*
 
-*Defined in [src/types/controller.interface.ts:54](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L54)*
+*Defined in [src/types/controller.interface.ts:54](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L54)*
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 • **user**: *"getAccountInfo" | "toggleSsh"*
 
-*Defined in [src/types/controller.interface.ts:2](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/controller.interface.ts#L2)*
+*Defined in [src/types/controller.interface.ts:2](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/controller.interface.ts#L2)*

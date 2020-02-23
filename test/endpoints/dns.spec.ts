@@ -1,10 +1,10 @@
-import { UserEndpoint, BegetRequest } from '../../src';
-import { begetConfig } from '../test-utils';
+import { DnsEndpoint, BegetRequest } from '../../src';
+import { begetConfig, STRING } from '../test-utils';
 
-describe('User endpoint', () => {
+describe('Dns endpoint', () => {
     it('init without errors', done => {
         const beget = new BegetRequest(begetConfig);
-        new UserEndpoint(beget);
+        new DnsEndpoint(beget);
 
         done();
     });
@@ -12,8 +12,8 @@ describe('User endpoint', () => {
     it('should exist getAccountInfo()', async done => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
-        const endpoint = new UserEndpoint(beget);
-        await endpoint.getAccountInfo();
+        const endpoint = new DnsEndpoint(beget);
+        await endpoint.getData(STRING);
 
         done();
     });
@@ -21,8 +21,10 @@ describe('User endpoint', () => {
     it('should exist toggleSsh()', async done => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
-        const endpoint = new UserEndpoint(beget);
-        await endpoint.toggleSsh(1);
+        const endpoint = new DnsEndpoint(beget);
+        await endpoint.changeRecords(STRING, {
+            CNAME: [{ priority: 0, value: 'ns1.domain.de' }],
+        });
 
         done();
     });

@@ -1,11 +1,11 @@
 import got from 'got';
-import * as qs from 'qs';
 import { OptionsOfDefaultResponseBody } from 'got/dist/source/create';
+import * as qs from 'qs';
 import { format } from 'util';
-import { BegetOptions } from './options/beget-options';
 import { BegetError } from './beget.error';
-import * as Beget from './types/controller.interface';
+import { BegetOptions, BegetRequestOptions } from './options/beget-options';
 import * as BegetCommon from './types/common.interface';
+import * as Beget from './types/controller.interface';
 
 export class BegetRequest {
     private request = got.extend({
@@ -14,7 +14,17 @@ export class BegetRequest {
         prefixUrl: `https://api.beget.com/api`,
     });
 
-    constructor(private readonly config: BegetOptions) {}
+    private readonly config: BegetRequestOptions;
+
+    constructor(config: BegetOptions) {
+        this.config = {
+            login: config.login,
+            passwd: config.password,
+            input_format: config.inputFormat || 'json',
+            output_format: config.outputFormat || 'json',
+        };
+    }
+    // constructor(private readonly config: BegetOptions) {}
 
     private async safeRequest<R>(options: OptionsOfDefaultResponseBody): Promise<R> {
         const response = await this.request
@@ -60,17 +70,7 @@ export class BegetRequest {
     ): Promise<R> {
         const options: OptionsOfDefaultResponseBody = {
             url: `${section}/${method}`,
-            searchParams: qs.stringify(
-                Object.assign(
-                    {
-                        login: this.config.login,
-                        passwd: this.config.password,
-                        output_format: this.config.outputFormat,
-                        input_format: this.config.inputFormat,
-                    },
-                    data
-                )
-            ),
+            searchParams: { ...this.config, input_data: qs.stringify(data) },
         };
 
         return this.safeRequest(options);

@@ -7,3 +7,4 @@
 ### Interfaces
 
 * [BegetOptions](../interfaces/_options_beget_options_.begetoptions.md)
+* [BegetRequestOptions](../interfaces/_options_beget_options_.begetrequestoptions.md)

@@ -21,7 +21,7 @@
 
 • **error_code**: *string*
 
-Defined in src/types/common.interface.ts:25
+*Defined in [src/types/common.interface.ts:25](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/common.interface.ts#L25)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **error_text**: *string*
 
-Defined in src/types/common.interface.ts:24
+*Defined in [src/types/common.interface.ts:24](https://github.com/olehcambel/node-beget/blob/1fa682a/src/types/common.interface.ts#L24)*

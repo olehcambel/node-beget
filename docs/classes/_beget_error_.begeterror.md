@@ -30,7 +30,7 @@
 
 \+ **new BegetError**(`payload`: [ErrorPayload](../interfaces/_types_common_interface_.errorpayload.md) | [ErrorPayload](../interfaces/_types_common_interface_.errorpayload.md)[], `on?`: object): *[BegetError](_beget_error_.begeterror.md)*
 
-Defined in src/beget.error.ts:10
+*Defined in [src/beget.error.ts:10](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.error.ts#L10)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **fatal**: *boolean*
 
-Defined in src/beget.error.ts:10
+*Defined in [src/beget.error.ts:10](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.error.ts#L10)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 *Overrides void*
 
-Defined in src/beget.error.ts:9
+*Defined in [src/beget.error.ts:9](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.error.ts#L9)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **on**? : *object*
 
-Defined in src/beget.error.ts:14
+*Defined in [src/beget.error.ts:14](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.error.ts#L14)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **payload**: *[ErrorPayload](../interfaces/_types_common_interface_.errorpayload.md) | [ErrorPayload](../interfaces/_types_common_interface_.errorpayload.md)[]*
 
-Defined in src/beget.error.ts:13
+*Defined in [src/beget.error.ts:13](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.error.ts#L13)*
 
 ___
 

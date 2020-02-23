@@ -1,11 +1,12 @@
 import { BegetRequest } from '../beget-request';
 import { Methods } from '../types/controller.interface';
+import { AccountInfo } from '../types/user.interface';
 
 export class UserEndpoint {
     constructor(private readonly client: BegetRequest) {}
 
-    private method<T>(Method: Methods['user'], data?: object): Promise<T> {
-        return this.client.api<'user', T>('user', Method, data);
+    private method<T>(method: Methods['user'], data?: object): Promise<T> {
+        return this.client.api<'user', T>('user', method, data);
     }
 
     /**
@@ -13,7 +14,7 @@ export class UserEndpoint {
      * on some parameters of the server, where the user is
      * currently located and on the applied limits thereof.
      */
-    getAccountInfo(): Promise<void> {
+    getAccountInfo(): Promise<AccountInfo> {
         return this.method('getAccountInfo');
     }
 

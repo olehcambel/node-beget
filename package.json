@@ -6,7 +6,7 @@
   "types": "build/index.d.ts",
   "scripts": {
     "start": "node ./build/index.js",
-    "test": "jest --coverage --runInBand",
+    "test": "jest --coverage",
     "test:watch": "jest --watch --runInBand",
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "tsc -p tsconfig.build.json",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olehcambel/node-beget.git"
+    "url": "https://github.com/olehcambel/node-beget.git"
   },
   "keywords": [],
   "author": "",

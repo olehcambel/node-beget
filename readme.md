@@ -15,7 +15,7 @@ const begetConfig = { login: 'login', password: 'password' };
 const beget = new Beget(begetConfig);
 
 // ...
-// getaccount info
+// get account info
 const accountInfo = await beget.user.getAccountInfo();
 
 // toggle ssh
@@ -25,7 +25,7 @@ beget.user.toggleSsh(0);
 ```ts
 // if you need only one endpoint
 
-import { UserEndpoint, Beget } from 'beget-api';
+import { UserEndpoint, Beget } from 'node-beget';
 
 const begetConfig = { login: 'login', password: 'password' };
 const beget = new Beget(begetConfig);

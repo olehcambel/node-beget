@@ -14,3 +14,4 @@
 * ["options/beget-options"](modules/_options_beget_options_.md)
 * ["types/common.interface"](modules/_types_common_interface_.md)
 * ["types/controller.interface"](modules/_types_controller_interface_.md)
+* ["types/user.interface"](modules/_types_user_interface_.md)

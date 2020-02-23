@@ -22,4 +22,4 @@
 
 • **user**: *[UserEndpoint](../classes/_endpoints_user_.userendpoint.md)*
 
-Defined in src/beget.ts:6
+*Defined in [src/beget.ts:6](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.ts#L6)*

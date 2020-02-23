@@ -26,7 +26,7 @@
 
 \+ **new Beget**(`config`: [BegetOptions](../interfaces/_options_beget_options_.begetoptions.md)): *[Beget](_beget_.beget.md)*
 
-Defined in src/beget.ts:10
+*Defined in [src/beget.ts:10](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.ts#L10)*
 
 **Parameters:**
 
@@ -44,4 +44,4 @@ Name | Type |
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[user](../interfaces/_beget_.begetclient.md#user)*
 
-Defined in src/beget.ts:10
+*Defined in [src/beget.ts:10](https://github.com/olehcambel/node-beget/blob/1fa682a/src/beget.ts#L10)*

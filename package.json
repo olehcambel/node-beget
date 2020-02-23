@@ -1,6 +1,6 @@
 {
   "name": "node-beget",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client library for accessing Beget API",
   "main": "build/index.js",
   "types": "build/index.d.ts",

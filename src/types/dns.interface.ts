@@ -24,15 +24,15 @@ export interface DomainInfo {
     /**
      * domain is under BeGet administration (0 - no / 1 - yes)
      */
-    is_under_control: 1;
+    is_under_control: 0 | 1;
     /**
      * domain is on BeGet DNS servers (0 - no / 1 - yes)
      */
-    is_beget_dns: 1;
+    is_beget_dns: 0 | 1;
     /**
      * is the domain a subdomain (0 - no / 1 - yes)
      */
-    is_subdomain: 0;
+    is_subdomain: 0 | 1;
     /**
      * passed domain name
      * @example 'beget.de'

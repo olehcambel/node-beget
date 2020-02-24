@@ -9,8 +9,10 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch --runInBand",
     "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint 'src/**/*.ts'",
     "build": "tsc -p tsconfig.build.json",
-    "doc": "node ./typedoc"
+    "doc": "node ./typedoc",
+    "prepush": "npm test && npm run lint && npm run format && npm run build"
   },
   "repository": {
     "type": "git",

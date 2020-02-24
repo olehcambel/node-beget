@@ -14,4 +14,14 @@ describe('Beget', () => {
         const beget = new Beget(begetConfig);
         expect(beget.user).not.toBeNull();
     });
+
+    it('instantiates dns endpoint', () => {
+        const beget = new Beget(begetConfig);
+        expect(beget.dns).not.toBeNull();
+    });
+
+    it('instantiates backup endpoint', () => {
+        const beget = new Beget(begetConfig);
+        expect(beget.backup).not.toBeNull();
+    });
 });

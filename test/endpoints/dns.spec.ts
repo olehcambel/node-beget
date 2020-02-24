@@ -9,7 +9,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist getAccountInfo()', async done => {
+    it('should exist getData()', async done => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);
@@ -18,7 +18,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist toggleSsh()', async done => {
+    it('should exist changeRecords()', async done => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);

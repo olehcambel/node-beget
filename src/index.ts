@@ -1,6 +1,11 @@
 export * from './beget';
 export * from './beget-request';
-export * from './endpoints/dns';
-export * from './endpoints/user';
 export * from './endpoints/backup';
+export * from './endpoints/cron';
+export * from './endpoints/dns';
+export * from './endpoints/domain';
+export * from './endpoints/mail';
+export * from './endpoints/site';
+export * from './endpoints/stat';
+export * from './endpoints/user';
 export { BegetOptions } from './options/beget-options';

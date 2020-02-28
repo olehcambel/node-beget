@@ -6,14 +6,26 @@
 
 ### References
 
+* [BackupEndpoint](_index_.md#backupendpoint)
 * [Beget](_index_.md#beget)
 * [BegetClient](_index_.md#begetclient)
 * [BegetOptions](_index_.md#begetoptions)
 * [BegetRequest](_index_.md#begetrequest)
+* [CronEndpoint](_index_.md#cronendpoint)
 * [DnsEndpoint](_index_.md#dnsendpoint)
+* [DomainEndpoint](_index_.md#domainendpoint)
+* [MailEndpoint](_index_.md#mailendpoint)
+* [SiteEndpoint](_index_.md#siteendpoint)
+* [StatEndpoint](_index_.md#statendpoint)
 * [UserEndpoint](_index_.md#userendpoint)
 
 ## References
+
+###  BackupEndpoint
+
+• **BackupEndpoint**:
+
+___
 
 ###  Beget
 
@@ -39,9 +51,39 @@ ___
 
 ___
 
+###  CronEndpoint
+
+• **CronEndpoint**:
+
+___
+
 ###  DnsEndpoint
 
 • **DnsEndpoint**:
+
+___
+
+###  DomainEndpoint
+
+• **DomainEndpoint**:
+
+___
+
+###  MailEndpoint
+
+• **MailEndpoint**:
+
+___
+
+###  SiteEndpoint
+
+• **SiteEndpoint**:
+
+___
+
+###  StatEndpoint
+
+• **StatEndpoint**:
 
 ___
 

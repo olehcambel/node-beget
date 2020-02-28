@@ -23,7 +23,7 @@
 
 • **fqdn**: *string*
 
-Defined in src/types/dns.interface.ts:40
+*Defined in [src/types/dns.interface.ts:37](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L37)*
 
 passed domain name
 
@@ -33,9 +33,9 @@ ___
 
 ###  is_beget_dns
 
-• **is_beget_dns**: *1*
+• **is_beget_dns**: *0 | 1*
 
-Defined in src/types/dns.interface.ts:31
+*Defined in [src/types/dns.interface.ts:28](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L28)*
 
 domain is on BeGet DNS servers (0 - no / 1 - yes)
 
@@ -43,9 +43,9 @@ ___
 
 ###  is_subdomain
 
-• **is_subdomain**: *0*
+• **is_subdomain**: *0 | 1*
 
-Defined in src/types/dns.interface.ts:35
+*Defined in [src/types/dns.interface.ts:32](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L32)*
 
 is the domain a subdomain (0 - no / 1 - yes)
 
@@ -53,9 +53,9 @@ ___
 
 ###  is_under_control
 
-• **is_under_control**: *1*
+• **is_under_control**: *0 | 1*
 
-Defined in src/types/dns.interface.ts:27
+*Defined in [src/types/dns.interface.ts:24](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L24)*
 
 domain is under BeGet administration (0 - no / 1 - yes)
 
@@ -63,9 +63,9 @@ ___
 
 ###  records
 
-• **records**: *Record‹"DNS" | "DNS_IP" | "A" | "MX" | "TXT", [DNSRecord](_types_dns_interface_.dnsrecord.md)[]›*
+• **records**: *[DNSRecords](../modules/_types_dns_interface_.md#dnsrecords)*
 
-Defined in src/types/dns.interface.ts:44
+*Defined in [src/types/dns.interface.ts:41](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L41)*
 
 currently used DNS records
 
@@ -75,7 +75,7 @@ ___
 
 • **set_type**: *number*
 
-Defined in src/types/dns.interface.ts:51
+*Defined in [src/types/dns.interface.ts:48](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L48)*
 
 type of currently used settings:
 1 - A, MX, TXT records used;

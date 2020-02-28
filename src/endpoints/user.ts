@@ -5,6 +5,9 @@ import { AccountInfo } from '../types/user.interface';
 export class UserEndpoint {
     constructor(private readonly client: BegetRequest) {}
 
+    /**
+     * @private
+     */
     private method<T>(method: Methods['user'], data?: object): Promise<T> {
         return this.client.api<'user', T>('user', method, data);
     }

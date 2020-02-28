@@ -20,7 +20,7 @@ export interface Methods {
         | 'dropDb'
         | 'dropAccess'
         | 'changeAccessPassword';
-    sites:
+    site:
         | 'getList'
         | 'add'
         | 'delete'
@@ -29,7 +29,7 @@ export interface Methods {
         | 'freeze'
         | 'unfreeze'
         | 'isSiteFrozen';
-    domains:
+    domain:
         | 'getList'
         | 'getZoneList'
         | 'addVirtual'
@@ -43,7 +43,18 @@ export interface Methods {
         | 'getDirectives'
         | 'addDirectives'
         | 'removeDirectives';
-    mail: 'getMailboxList' | 'changeMailboxPassword' | 'createMailbox';
+    mail:
+        | 'getMailboxList'
+        | 'changeMailboxPassword'
+        | 'createMailbox'
+        | 'dropMailbox'
+        | 'changeMailboxSettings'
+        | 'forwardListAddMailbox'
+        | 'forwardListDeleteMailbox'
+        | 'forwardListShow'
+        | 'setDomainMail'
+        | 'clearDomainMail';
+
     dropMailbox:
         | 'changeMailboxSettings'
         | 'forwardListAddMailbox'

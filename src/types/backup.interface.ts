@@ -66,3 +66,24 @@ export interface LogTask {
      */
     status: string;
 }
+
+export interface Mysql {
+    /**
+     * if backup_id is not given, the listing is performed according to
+     * the current copy;
+     */
+    backup_id?: number;
+    /**
+     * array (one or several values) of MySQL databases for recovery
+     */
+    bases?: string[];
+    /**
+     * array (one or several values) of paths for restoring from home
+     * directory root (e.g. "/site.de/public_html");
+     */
+    paths?: string[];
+    /**
+     * path from home directory root (e.g. "/site.de/public_html");
+     */
+    path?: string[];
+}

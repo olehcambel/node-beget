@@ -9,16 +9,13 @@ interface DNSRecord {
     priority: number;
 }
 
-type DNSRecordFirst = Record<'A' | 'MX' | 'TXT', DNSRecord[]>;
-type DNSRecordSecond = Record<'NS', DNSRecord[]>;
-type DNSRecordThird = Record<'CNAME', DNSRecord[]>;
-type DNSRecordFourth = Record<'DNS' | 'DNS_IP', DNSRecord[]>;
+type RecordFirst = 'A' | 'MX' | 'TXT';
+type RecordSecond = 'NS';
+type RecordThird = 'CNAME';
+type RecordFourth = 'DNS' | 'DNS_IP';
+type DNSRecordTypes = RecordFirst | RecordSecond | RecordThird | RecordFourth;
 
-export type DNSRecordTypes =
-    | DNSRecordFirst
-    | DNSRecordSecond
-    | DNSRecordThird
-    | DNSRecordFourth;
+type DNSRecords = Types.RecordPartial<DNSRecordTypes, DNSRecord[]>;
 
 export interface DomainInfo {
     /**
@@ -41,7 +38,7 @@ export interface DomainInfo {
     /**
      * currently used DNS records
      */
-    records: Record<'DNS' | 'DNS_IP' | 'A' | 'MX' | 'TXT', DNSRecord[]>;
+    records: DNSRecords;
     /**
      * type of currently used settings:
      * 1 - A, MX, TXT records used;
@@ -50,3 +47,5 @@ export interface DomainInfo {
      */
     set_type: number;
 }
+
+export type ChangeRecords = Pick<DomainInfo, 'fqdn' | 'records'>;

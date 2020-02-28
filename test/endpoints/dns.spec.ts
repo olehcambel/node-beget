@@ -1,19 +1,35 @@
 import { DnsEndpoint, BegetRequest } from '../../src';
-import { begetConfig, STRING } from '../test-utils';
+import { begetConfig, STRING, ID } from '../test-utils';
 
 describe('Dns endpoint', () => {
-    it('init without errors', done => {
-        const beget = new BegetRequest(begetConfig);
-        new DnsEndpoint(beget);
+    describe('init', () => {
+        it('init without errors', done => {
+            const beget = new BegetRequest(begetConfig);
+            new DnsEndpoint(beget);
 
-        done();
+            done();
+        });
+
+        it('call api with right args', async () => {
+            const beget = new BegetRequest(begetConfig);
+            const endpoint = new DnsEndpoint(beget);
+            const expectedData = { ID };
+            const method = 'changeRecords';
+
+            jest.spyOn(beget, 'api');
+            beget.api = jest.fn();
+
+            await endpoint['method'](method, expectedData);
+
+            expect(beget.api).toHaveBeenCalledWith('dns', method, expectedData);
+        });
     });
 
     it('should exist getData()', async done => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);
-        await endpoint.getData(STRING);
+        await endpoint.getData({ fqdn: STRING });
 
         done();
     });
@@ -22,8 +38,9 @@ describe('Dns endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);
-        await endpoint.changeRecords(STRING, {
-            CNAME: [{ priority: 0, value: 'ns1.domain.de' }],
+        await endpoint.changeRecords({
+            fqdn: STRING,
+            records: { CNAME: [{ priority: 0, value: 'ns1.domain.de' }] },
         });
 
         done();

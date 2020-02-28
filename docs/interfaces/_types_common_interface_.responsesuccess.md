@@ -23,7 +23,7 @@
 
 • **answer**: *object*
 
-*Defined in [src/types/common.interface.ts:5](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/common.interface.ts#L5)*
+*Defined in [src/types/common.interface.ts:5](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/common.interface.ts#L5)*
 
 #### Type declaration:
 
@@ -37,4 +37,4 @@ ___
 
 • **status**: *"success"*
 
-*Defined in [src/types/common.interface.ts:4](https://github.com/olehcambel/node-beget/blob/2b6a521/src/types/common.interface.ts#L4)*
+*Defined in [src/types/common.interface.ts:4](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/common.interface.ts#L4)*

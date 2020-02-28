@@ -1,12 +1,28 @@
 import { BackupEndpoint, BegetRequest } from '../../src';
-import { begetConfig, STRING, ID } from '../test-utils';
+import { begetConfig, ID, STRING } from '../test-utils';
 
 describe('Backup endpoint', () => {
-    it('init without errors', done => {
-        const beget = new BegetRequest(begetConfig);
-        new BackupEndpoint(beget);
+    describe('init', () => {
+        it('init without errors', done => {
+            const beget = new BegetRequest(begetConfig);
+            new BackupEndpoint(beget);
 
-        done();
+            done();
+        });
+
+        it('call api with right args', async () => {
+            const beget = new BegetRequest(begetConfig);
+            const endpoint = new BackupEndpoint(beget);
+            const expectedData = { ID };
+            const method = 'downloadFile';
+
+            jest.spyOn(beget, 'api');
+            beget.api = jest.fn();
+
+            await endpoint['method'](method, expectedData);
+
+            expect(beget.api).toHaveBeenCalledWith('backup', method, expectedData);
+        });
     });
 
     it('should exist getFileBackupList()', async done => {
@@ -31,7 +47,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.getFileList(undefined, STRING);
+        await endpoint.getFileList({ backup_id: ID });
 
         done();
     });
@@ -40,7 +56,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.getMysqlList(ID);
+        await endpoint.getMysqlList({ backup_id: ID });
 
         done();
     });
@@ -49,7 +65,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.restoreFile(ID);
+        await endpoint.restoreFile({ paths: [STRING] });
 
         done();
     });
@@ -58,7 +74,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.restoreMysql(ID, [STRING]);
+        await endpoint.restoreMysql({ bases: [STRING] });
 
         done();
     });
@@ -67,7 +83,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.downloadFile(ID, [STRING]);
+        await endpoint.downloadFile({ paths: [STRING] });
 
         done();
     });
@@ -76,7 +92,7 @@ describe('Backup endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
-        await endpoint.downloadMysql(ID);
+        await endpoint.downloadMysql({ bases: [STRING] });
 
         done();
     });

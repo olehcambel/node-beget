@@ -29,15 +29,10 @@ export class BegetRequest {
     private async safeRequest<R>(options: OptionsOfDefaultResponseBody): Promise<R> {
         const response = await this.request
             .get<BegetCommon.ResponseSuccess<R> | BegetCommon.ResponseError>(
-                options as Types.Merge<
-                    OptionsOfDefaultResponseBody,
-                    { resolveBodyOnly: true }
-                >
+                options as Types.Merge<OptionsOfDefaultResponseBody, { resolveBodyOnly: true }>
             )
             .catch(({ message, options }) => {
-                throw new Error(
-                    `Invalid response status:\n${format({ message, options })}`
-                );
+                throw new Error(`Invalid response status:\n${format({ message, options })}`);
             });
 
         if (response.status === 'success') {

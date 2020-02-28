@@ -10,18 +10,47 @@ describe('Beget', () => {
         expect(delegate).not.toThrow(Error);
     });
 
-    it('instantiates user endpoint', () => {
+    describe('instantiates ALL endpoints', () => {
         const beget = new Beget(begetConfig);
-        expect(beget.user).not.toBeNull();
-    });
 
-    it('instantiates dns endpoint', () => {
-        const beget = new Beget(begetConfig);
-        expect(beget.dns).not.toBeNull();
-    });
+        it('instantiates backup endpoint', () => {
+            expect(beget.backup).not.toBeNull();
+        });
 
-    it('instantiates backup endpoint', () => {
-        const beget = new Beget(begetConfig);
-        expect(beget.backup).not.toBeNull();
+        it('instantiates cron endpoint', () => {
+            expect(beget.cron).not.toBeNull();
+        });
+
+        it('instantiates dns endpoint', () => {
+            expect(beget.dns).not.toBeNull();
+        });
+
+        it('instantiates domains endpoint', () => {
+            expect(beget.domain).not.toBeNull();
+        });
+
+        // it('instantiates ftp endpoint', () => {
+        //     expect(beget.ftp).not.toBeNull();
+        // });
+
+        it('instantiates mail endpoint', () => {
+            expect(beget.mail).not.toBeNull();
+        });
+
+        // it('instantiates mysql endpoint', () => {
+        //     expect(beget.mysql).not.toBeNull();
+        // });
+
+        it('instantiates site endpoint', () => {
+            expect(beget.site).not.toBeNull();
+        });
+
+        it('instantiates stat endpoint', () => {
+            expect(beget.stat).not.toBeNull();
+        });
+
+        it('instantiates user endpoint', () => {
+            expect(beget.user).not.toBeNull();
+        });
     });
 });

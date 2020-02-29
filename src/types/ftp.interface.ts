@@ -1,11 +1,3 @@
-// interface Account {
-//     /**
-//      * @example 'user_acc1';
-//      */
-//     login: string;
-//     homedir: '/public_html';
-// }
-
 export interface Account {
     /**
      * suffix part of login. When passing this parameter, please note

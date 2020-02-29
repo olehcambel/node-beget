@@ -28,6 +28,3 @@ export interface DBConf {
      */
     access: string;
 }
-
-// interface Access extends AddDB {
-// }

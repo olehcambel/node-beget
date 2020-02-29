@@ -4,11 +4,21 @@
 
 ## Introduction
 
-> Client library for accessing Beget API
+> Client library for accessing Beget API. Beget.API will allow to use most features of the administration panel directly from your own scripts, content management systems (CMS) and other software products.
+
+### What can I do using Beget.API?
+- Receive information about the web hosting account;
+- Administer security backups;
+- Administer the task planner;
+- Adjust DNS;
+- Administer databases;
+- Create and delete websites on account;
+- Manage domains settings;
+- Manage mailboxes.
 
 ## Generated Documentation
 
--   [Details](./docs/globals.md)
+[See](./docs/globals.md) documentation on endpoints in details
 
 ## example usage
 

@@ -19,7 +19,7 @@
 
 • **days**: *[SiteLoadParams](_types_stat_interface_.siteloadparams.md)[]*
 
-Defined in src/types/stat.interface.ts:32
+*Defined in [src/types/stat.interface.ts:32](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/stat.interface.ts#L32)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **hours**: *[SiteLoadParams](_types_stat_interface_.siteloadparams.md)[]*
 
-Defined in src/types/stat.interface.ts:33
+*Defined in [src/types/stat.interface.ts:33](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/stat.interface.ts#L33)*

@@ -27,7 +27,7 @@
 
 • **id**: *string*
 
-Defined in src/types/domain.interface.ts:83
+*Defined in [src/types/domain.interface.ts:83](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L83)*
 
 zone ID
 
@@ -37,7 +37,7 @@ ___
 
 • **is_idn**: *string*
 
-Defined in src/types/domain.interface.ts:113
+*Defined in [src/types/domain.interface.ts:113](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L113)*
 
 does the zone support IDN domains
 
@@ -49,7 +49,7 @@ ___
 
 • **is_national**: *string*
 
-Defined in src/types/domain.interface.ts:118
+*Defined in [src/types/domain.interface.ts:118](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L118)*
 
 is the zone national
 
@@ -61,7 +61,7 @@ ___
 
 • **max_period**: *string*
 
-Defined in src/types/domain.interface.ts:128
+*Defined in [src/types/domain.interface.ts:128](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L128)*
 
 maximum domain registration period (in years)
 
@@ -73,7 +73,7 @@ ___
 
 • **min_period**: *string*
 
-Defined in src/types/domain.interface.ts:123
+*Defined in [src/types/domain.interface.ts:123](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L123)*
 
 minimum domain registration period (in years)
 
@@ -85,7 +85,7 @@ ___
 
 • **price**: *string*
 
-Defined in src/types/domain.interface.ts:93
+*Defined in [src/types/domain.interface.ts:93](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L93)*
 
 price of domain registration in zone
 
@@ -97,7 +97,7 @@ ___
 
 • **price_idn**: *null | string*
 
-Defined in src/types/domain.interface.ts:103
+*Defined in [src/types/domain.interface.ts:103](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L103)*
 
 price of IDN domain registration in zone
 
@@ -109,7 +109,7 @@ ___
 
 • **price_idn_renew**: *null | string*
 
-Defined in src/types/domain.interface.ts:108
+*Defined in [src/types/domain.interface.ts:108](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L108)*
 
 price of IDN domain renewal in zone
 
@@ -121,7 +121,7 @@ ___
 
 • **price_renew**: *string*
 
-Defined in src/types/domain.interface.ts:98
+*Defined in [src/types/domain.interface.ts:98](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L98)*
 
 price of domain renewal in zone
 
@@ -133,7 +133,7 @@ ___
 
 • **zone**: *string*
 
-Defined in src/types/domain.interface.ts:88
+*Defined in [src/types/domain.interface.ts:88](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L88)*
 
 zone name
 

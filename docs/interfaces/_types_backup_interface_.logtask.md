@@ -23,7 +23,7 @@
 
 • **date_create**: *string*
 
-*Defined in [src/types/backup.interface.ts:57](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L57)*
+*Defined in [src/types/backup.interface.ts:57](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L57)*
 
 query creation time in "Y-m-d H:i:s" format;
 
@@ -35,7 +35,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [src/types/backup.interface.ts:42](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L42)*
+*Defined in [src/types/backup.interface.ts:42](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L42)*
 
 dosnload / restore query identifier;
 
@@ -47,7 +47,7 @@ ___
 
 • **operation**: *[LogTaskOperation](../modules/_types_backup_interface_.md#logtaskoperation)*
 
-*Defined in [src/types/backup.interface.ts:47](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L47)*
+*Defined in [src/types/backup.interface.ts:47](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L47)*
 
 restore operation (restore), download (download);
 
@@ -59,7 +59,7 @@ ___
 
 • **status**: *string*
 
-*Defined in [src/types/backup.interface.ts:67](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L67)*
+*Defined in [src/types/backup.interface.ts:67](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L67)*
 
 execution status;
 
@@ -71,7 +71,7 @@ ___
 
 • **target_list**: *string[]*
 
-*Defined in [src/types/backup.interface.ts:62](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L62)*
+*Defined in [src/types/backup.interface.ts:62](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L62)*
 
 element array in query (files or databases);
 
@@ -83,7 +83,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/backup.interface.ts:52](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L52)*
+*Defined in [src/types/backup.interface.ts:52](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L52)*
 
 detailed operation and restore / download data type and file / mysql;
 

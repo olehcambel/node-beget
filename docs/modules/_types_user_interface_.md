@@ -7,3 +7,4 @@
 ### Interfaces
 
 * [AccountInfo](../interfaces/_types_user_interface_.accountinfo.md)
+* [SshSettings](../interfaces/_types_user_interface_.sshsettings.md)

@@ -23,7 +23,7 @@
 
 • **balance**: *number*
 
-Defined in src/types/domain.interface.ts:192
+*Defined in [src/types/domain.interface.ts:192](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L192)*
 
 current account balance
 
@@ -35,7 +35,7 @@ ___
 
 • **bonus_domains**: *number*
 
-Defined in src/types/domain.interface.ts:187
+*Defined in [src/types/domain.interface.ts:187](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L187)*
 
 current number of bonus domains on account in selected zone
 
@@ -47,7 +47,7 @@ ___
 
 • **in_system**: *boolean*
 
-Defined in src/types/domain.interface.ts:212
+*Defined in [src/types/domain.interface.ts:212](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L212)*
 
 does such a domain already exist in the BeGet system
 
@@ -59,7 +59,7 @@ ___
 
 • **may_be_registered**: *boolean*
 
-Defined in src/types/domain.interface.ts:182
+*Defined in [src/types/domain.interface.ts:182](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L182)*
 
 is the domain available for registration (based on WHOIS service)
 
@@ -71,7 +71,7 @@ ___
 
 • **pay_type**: *null | [PayType](../modules/_types_domain_interface_.md#paytype)*
 
-Defined in src/types/domain.interface.ts:202
+*Defined in [src/types/domain.interface.ts:202](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L202)*
 
 payment type for domain registration.
 
@@ -88,7 +88,7 @@ ___
 
 • **price**: *number*
 
-Defined in src/types/domain.interface.ts:207
+*Defined in [src/types/domain.interface.ts:207](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L207)*
 
 total price of domain registration (considering the period)
 

@@ -14,7 +14,9 @@
 * [CronEndpoint](_index_.md#cronendpoint)
 * [DnsEndpoint](_index_.md#dnsendpoint)
 * [DomainEndpoint](_index_.md#domainendpoint)
+* [FtpEndpoint](_index_.md#ftpendpoint)
 * [MailEndpoint](_index_.md#mailendpoint)
+* [MysqlEndpoint](_index_.md#mysqlendpoint)
 * [SiteEndpoint](_index_.md#siteendpoint)
 * [StatEndpoint](_index_.md#statendpoint)
 * [UserEndpoint](_index_.md#userendpoint)
@@ -69,9 +71,21 @@ ___
 
 ___
 
+###  FtpEndpoint
+
+• **FtpEndpoint**:
+
+___
+
 ###  MailEndpoint
 
 • **MailEndpoint**:
+
+___
+
+###  MysqlEndpoint
+
+• **MysqlEndpoint**:
 
 ___
 

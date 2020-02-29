@@ -19,7 +19,7 @@
 
 • **directives_list**: *[Directive](_types_domain_interface_.directive.md)[]*
 
-Defined in src/types/domain.interface.ts:280
+*Defined in [src/types/domain.interface.ts:280](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L280)*
 
 array of directives in the format:
 
@@ -29,6 +29,6 @@ ___
 
 • **full_fqdn**: *string*
 
-Defined in src/types/domain.interface.ts:276
+*Defined in [src/types/domain.interface.ts:276](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L276)*
 
 full domain name;

@@ -25,7 +25,7 @@
 
 Ƭ **ChangeRecords**: *Pick‹[DomainInfo](../interfaces/_types_dns_interface_.domaininfo.md), "fqdn" | "records"›*
 
-*Defined in [src/types/dns.interface.ts:51](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L51)*
+*Defined in [src/types/dns.interface.ts:51](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L51)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 Ƭ **DNSRecordTypes**: *[RecordFirst](_types_dns_interface_.md#recordfirst) | [RecordSecond](_types_dns_interface_.md#recordsecond) | [RecordThird](_types_dns_interface_.md#recordthird) | [RecordFourth](_types_dns_interface_.md#recordfourth)*
 
-*Defined in [src/types/dns.interface.ts:16](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L16)*
+*Defined in [src/types/dns.interface.ts:16](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L16)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **DNSRecords**: *Types.RecordPartial‹[DNSRecordTypes](_types_dns_interface_.md#dnsrecordtypes), [DNSRecord](../interfaces/_types_dns_interface_.dnsrecord.md)[]›*
 
-*Defined in [src/types/dns.interface.ts:18](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L18)*
+*Defined in [src/types/dns.interface.ts:18](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L18)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 Ƭ **RecordFirst**: *"A" | "MX" | "TXT"*
 
-*Defined in [src/types/dns.interface.ts:12](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L12)*
+*Defined in [src/types/dns.interface.ts:12](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L12)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 Ƭ **RecordFourth**: *"DNS" | "DNS_IP"*
 
-*Defined in [src/types/dns.interface.ts:15](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L15)*
+*Defined in [src/types/dns.interface.ts:15](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L15)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 Ƭ **RecordSecond**: *"NS"*
 
-*Defined in [src/types/dns.interface.ts:13](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L13)*
+*Defined in [src/types/dns.interface.ts:13](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L13)*
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 Ƭ **RecordThird**: *"CNAME"*
 
-*Defined in [src/types/dns.interface.ts:14](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/dns.interface.ts#L14)*
+*Defined in [src/types/dns.interface.ts:14](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/dns.interface.ts#L14)*

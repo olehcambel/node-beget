@@ -34,7 +34,7 @@
 
 Ƭ **AddVirtual**: *Pick‹[CheckDomain](../interfaces/_types_domain_interface_.checkdomain.md), "hostname" | "zone_id"›*
 
-Defined in src/types/domain.interface.ts:175
+*Defined in [src/types/domain.interface.ts:175](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L175)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 Ƭ **CGI**: *"disabled" | "enabled"*
 
-Defined in src/types/domain.interface.ts:215
+*Defined in [src/types/domain.interface.ts:215](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L215)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 Ƭ **PayType**: *"money" | "bonus_domain"*
 
-Defined in src/types/domain.interface.ts:158
+*Defined in [src/types/domain.interface.ts:158](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L158)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 Ƭ **PhpVersion**: *Pick‹[PhpInfo](../interfaces/_types_domain_interface_.phpinfo.md), "full_fqdn" | "php_version" | "cgi" | "allowed_versions"›*
 
-Defined in src/types/domain.interface.ts:247
+*Defined in [src/types/domain.interface.ts:247](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L247)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 Ƭ **RegistarOrderStatus**: *"new" | "registred" | "delete"*
 
-Defined in src/types/domain.interface.ts:2
+*Defined in [src/types/domain.interface.ts:2](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L2)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 Ƭ **RegistarStatus**: *"delegated" | "not_active" | "undelegated"*
 
-Defined in src/types/domain.interface.ts:1
+*Defined in [src/types/domain.interface.ts:1](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L1)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 Ƭ **UpdatePhpVersion**: *Pick‹[PhpInfo](../interfaces/_types_domain_interface_.phpinfo.md), "full_fqdn" | "php_version" | "is_cgi"›*
 
-Defined in src/types/domain.interface.ts:252
+*Defined in [src/types/domain.interface.ts:252](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L252)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 Ƭ **UpdatePhpVersionResponse**: *Pick‹[PhpInfo](../interfaces/_types_domain_interface_.phpinfo.md), "full_fqdn" | "result" | "php_version" | "cgi"›*
 
-Defined in src/types/domain.interface.ts:254
+*Defined in [src/types/domain.interface.ts:254](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L254)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 Ƭ **ZoneList**: *object*
 
-Defined in src/types/domain.interface.ts:131
+*Defined in [src/types/domain.interface.ts:131](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L131)*
 
 #### Type declaration:
 

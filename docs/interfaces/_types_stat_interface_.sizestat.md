@@ -19,7 +19,7 @@
 
 • **date**: *string*
 
-Defined in src/types/stat.interface.ts:51
+*Defined in [src/types/stat.interface.ts:51](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/stat.interface.ts#L51)*
 
 **`example`** '2014-05-04'
 
@@ -29,6 +29,6 @@ ___
 
 • **size**: *string*
 
-Defined in src/types/stat.interface.ts:55
+*Defined in [src/types/stat.interface.ts:55](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/stat.interface.ts#L55)*
 
 **`example`** '229512'

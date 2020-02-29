@@ -28,7 +28,7 @@
 
 \+ **new BegetRequest**(`config`: [BegetOptions](../interfaces/_options_beget_options_.begetoptions.md)): *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/beget-request.ts:17](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/beget-request.ts#L17)*
+*Defined in [src/beget-request.ts:17](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget-request.ts#L17)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Name | Type |
 
 • **config**: *[BegetRequestOptions](../interfaces/_options_beget_options_.begetrequestoptions.md)*
 
-*Defined in [src/beget-request.ts:17](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/beget-request.ts#L17)*
+*Defined in [src/beget-request.ts:17](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget-request.ts#L17)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
         prefixUrl: `https://api.beget.com/api`,
     })
 
-*Defined in [src/beget-request.ts:11](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/beget-request.ts#L11)*
+*Defined in [src/beget-request.ts:11](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget-request.ts#L11)*
 
 ## Methods
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **api**<**T**, **R**>(`section`: T, `method`: Methods[T], `data?`: object): *Promise‹R›*
 
-*Defined in [src/beget-request.ts:61](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/beget-request.ts#L61)*
+*Defined in [src/beget-request.ts:61](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget-request.ts#L61)*
 
 **Type parameters:**
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **safeRequest**<**R**>(`options`: OptionsOfDefaultResponseBody): *Promise‹R›*
 
-*Defined in [src/beget-request.ts:29](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/beget-request.ts#L29)*
+*Defined in [src/beget-request.ts:29](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget-request.ts#L29)*
 
 **Type parameters:**
 

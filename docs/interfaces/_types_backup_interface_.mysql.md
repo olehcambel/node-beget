@@ -21,7 +21,7 @@
 
 • **backup_id**? : *number*
 
-*Defined in [src/types/backup.interface.ts:75](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L75)*
+*Defined in [src/types/backup.interface.ts:75](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L75)*
 
 if backup_id is not given, the listing is performed according to
 the current copy;
@@ -32,7 +32,7 @@ ___
 
 • **bases**? : *string[]*
 
-*Defined in [src/types/backup.interface.ts:79](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L79)*
+*Defined in [src/types/backup.interface.ts:79](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L79)*
 
 array (one or several values) of MySQL databases for recovery
 
@@ -42,7 +42,7 @@ ___
 
 • **path**? : *string[]*
 
-*Defined in [src/types/backup.interface.ts:88](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L88)*
+*Defined in [src/types/backup.interface.ts:88](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L88)*
 
 path from home directory root (e.g. "/site.de/public_html");
 
@@ -52,7 +52,7 @@ ___
 
 • **paths**? : *string[]*
 
-*Defined in [src/types/backup.interface.ts:84](https://github.com/olehcambel/node-beget/blob/fcfb1e8/src/types/backup.interface.ts#L84)*
+*Defined in [src/types/backup.interface.ts:84](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/backup.interface.ts#L84)*
 
 array (one or several values) of paths for restoring from home
 directory root (e.g. "/site.de/public_html");

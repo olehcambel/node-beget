@@ -30,7 +30,7 @@
 
 \+ **new StatEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[StatEndpoint](_endpoints_stat_.statendpoint.md)*
 
-Defined in src/endpoints/stat.ts:6
+*Defined in [src/endpoints/stat.ts:6](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L6)*
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-Defined in src/endpoints/stat.ts:7
+*Defined in [src/endpoints/stat.ts:7](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L7)*
 
 ## Methods
 
@@ -54,7 +54,7 @@ Defined in src/endpoints/stat.ts:7
 
 ▸ **getDbListLoad**(): *Promise‹[AvarageLoadDB](../modules/_types_stat_interface_.md#avarageloaddb)[]›*
 
-Defined in src/endpoints/stat.ts:31
+*Defined in [src/endpoints/stat.ts:31](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L31)*
 
 Method returns information about the average load on the user's databases
 for the past month.
@@ -70,7 +70,7 @@ ___
 
 ▸ **getDbLoad**(`db_name`: string): *Promise‹[MysqlLoadInfo](../interfaces/_types_stat_interface_.mysqlloadinfo.md)›*
 
-Defined in src/endpoints/stat.ts:49
+*Defined in [src/endpoints/stat.ts:49](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L49)*
 
 Method returns detailed information about load on the given MySQL database.
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **getSiteListLoad**(): *Promise‹[AvarageLoad](../interfaces/_types_stat_interface_.avarageload.md)[]›*
 
-Defined in src/endpoints/stat.ts:21
+*Defined in [src/endpoints/stat.ts:21](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L21)*
 
 Method returns information about the average load on user websites
 within the last month.
@@ -103,7 +103,7 @@ ___
 
 ▸ **getSiteLoad**(`params`: Pick‹[LinkDomain](../interfaces/_types_site_interface_.linkdomain.md), "site_id"›): *Promise‹[SiteLoad](../interfaces/_types_stat_interface_.siteload.md)›*
 
-Defined in src/endpoints/stat.ts:41
+*Defined in [src/endpoints/stat.ts:41](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L41)*
 
 Method returns detailed information about the load on the given webiste
 (load per day and hour)
@@ -125,7 +125,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["stat"], `data?`: object): *Promise‹T›*
 
-Defined in src/endpoints/stat.ts:12
+*Defined in [src/endpoints/stat.ts:12](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/stat.ts#L12)*
 
 **Type parameters:**
 

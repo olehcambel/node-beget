@@ -155,3 +155,15 @@ export interface AccountInfo {
      */
     server_uptime: string;
 }
+
+export interface SshSettings {
+    /**
+     * 1 - enable, 0 - disable
+     */
+    status: 0 | 1;
+    /**
+     * ftp account login, if passed enables/disables SSH access * to ftp account;
+     * if not passed, enables/disables SSH access to main user account;
+     */
+    ftplogin?: string;
+}

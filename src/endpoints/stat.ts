@@ -1,7 +1,7 @@
 import { BegetRequest } from '../beget-request';
 import { Methods } from '../types/controller.interface';
-import { AvarageLoad, AvarageLoadDB, SiteLoad, MysqlLoadInfo } from '../types/stat.interface';
 import { LinkDomain } from '../types/site.interface';
+import { AvarageLoad, AvarageLoadDB, MysqlLoadInfo, SiteLoad } from '../types/stat.interface';
 
 export class StatEndpoint {
     constructor(private readonly client: BegetRequest) {}

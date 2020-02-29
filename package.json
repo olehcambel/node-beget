@@ -12,13 +12,19 @@
     "lint": "eslint 'src/**/*.ts'",
     "build": "tsc -p tsconfig.build.json",
     "doc": "node ./typedoc",
-    "prepush": "npm test && npm run format && npm run lint && npm run build && npm run doc"
+    "prepush": "npm run lint && npm run build && npm test && npm run format"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/olehcambel/node-beget.git"
   },
-  "keywords": [],
+  "keywords": [
+    "beget",
+    "api",
+    "websites",
+    "domains",
+    "mail"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

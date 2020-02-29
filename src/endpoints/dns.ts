@@ -20,7 +20,7 @@ export class DnsEndpoint {
     }
 
     /**
-     * // TODO: change records to overload
+     * // TODO: change records to overloading
      * Method changes DNS records for given domain.
      * @returns Returns property of successful or unsuccessful execution.
      */

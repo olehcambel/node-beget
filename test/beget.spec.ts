@@ -29,17 +29,17 @@ describe('Beget', () => {
             expect(beget.domain).not.toBeNull();
         });
 
-        // it('instantiates ftp endpoint', () => {
-        //     expect(beget.ftp).not.toBeNull();
-        // });
+        it('instantiates ftp endpoint', () => {
+            expect(beget.ftp).not.toBeNull();
+        });
 
         it('instantiates mail endpoint', () => {
             expect(beget.mail).not.toBeNull();
         });
 
-        // it('instantiates mysql endpoint', () => {
-        //     expect(beget.mysql).not.toBeNull();
-        // });
+        it('instantiates mysql endpoint', () => {
+            expect(beget.mysql).not.toBeNull();
+        });
 
         it('instantiates site endpoint', () => {
             expect(beget.site).not.toBeNull();

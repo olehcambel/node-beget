@@ -38,7 +38,7 @@ describe('User endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new UserEndpoint(beget);
-        await endpoint.toggleSsh(1);
+        await endpoint.toggleSsh({ status: 0 });
 
         done();
     });

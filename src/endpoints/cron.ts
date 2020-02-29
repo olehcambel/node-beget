@@ -1,6 +1,6 @@
 import { BegetRequest } from '../beget-request';
 import { Methods } from '../types/controller.interface';
-import { CreateTask, Task, ChangeHiddenState } from '../types/cron.interface';
+import { ChangeHiddenState, CreateTask, Task } from '../types/cron.interface';
 
 export class CronEndpoint {
     constructor(private readonly client: BegetRequest) {}

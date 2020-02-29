@@ -20,7 +20,7 @@
 
 • **domain_id**: *string*
 
-*Defined in [src/types/domain.interface.ts:148](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L148)*
+*Defined in [src/types/domain.interface.ts:148](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L148)*
 
 parent domain ID
 
@@ -32,7 +32,7 @@ ___
 
 • **fqdn**: *string*
 
-*Defined in [src/types/domain.interface.ts:143](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L143)*
+*Defined in [src/types/domain.interface.ts:143](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L143)*
 
 full subdomain name
 
@@ -44,7 +44,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/domain.interface.ts:138](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L138)*
+*Defined in [src/types/domain.interface.ts:138](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L138)*
 
 subdomain ID
 

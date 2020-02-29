@@ -20,7 +20,7 @@
 
 • **access**: *string*
 
-*Defined in [src/types/mysql.interface.ts:29](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/mysql.interface.ts#L29)*
+*Defined in [src/types/mysql.interface.ts:29](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L29)*
 
 access name - it can be: domain, IP, * or localhost;
 
@@ -32,7 +32,7 @@ ___
 
 • **password**: *string*
 
-*Defined in [src/types/mysql.interface.ts:24](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/mysql.interface.ts#L24)*
+*Defined in [src/types/mysql.interface.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L24)*
 
 Password for the new database. It must contain at least 6 characters;
 
@@ -44,7 +44,7 @@ ___
 
 • **suffix**: *string*
 
-*Defined in [src/types/mysql.interface.ts:19](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/mysql.interface.ts#L19)*
+*Defined in [src/types/mysql.interface.ts:19](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L19)*
 
 suffix part of the database name. When passing this parameter,
 please note that the final login of the form "login_suffix"

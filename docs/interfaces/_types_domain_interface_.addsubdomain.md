@@ -20,6 +20,6 @@
 
 • **subdomain**: *string*
 
-*Defined in [src/types/domain.interface.ts:155](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L155)*
+*Defined in [src/types/domain.interface.ts:155](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L155)*
 
 subdomain name;

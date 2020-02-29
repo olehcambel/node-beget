@@ -19,7 +19,7 @@
 
 • **fqdn**: *string*
 
-*Defined in [src/types/site.interface.ts:10](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/site.interface.ts#L10)*
+*Defined in [src/types/site.interface.ts:10](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L10)*
 
 **`example`** 'site.de'
 
@@ -29,7 +29,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [src/types/site.interface.ts:6](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/site.interface.ts#L6)*
+*Defined in [src/types/site.interface.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L6)*
 
 the website ID is unique within one user.
 

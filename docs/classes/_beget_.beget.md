@@ -35,7 +35,7 @@
 
 \+ **new Beget**(`config`: [BegetOptions](../interfaces/_options_beget_options_.begetoptions.md)): *[Beget](_beget_.beget.md)*
 
-*Defined in [src/beget.ts:37](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L37)*
+*Defined in [src/beget.ts:37](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L37)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[backup](../interfaces/_beget_.begetclient.md#backup)*
 
-*Defined in [src/beget.ts:28](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L28)*
+*Defined in [src/beget.ts:28](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L28)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[cron](../interfaces/_beget_.begetclient.md#cron)*
 
-*Defined in [src/beget.ts:29](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L29)*
+*Defined in [src/beget.ts:29](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L29)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[dns](../interfaces/_beget_.begetclient.md#dns)*
 
-*Defined in [src/beget.ts:30](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L30)*
+*Defined in [src/beget.ts:30](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L30)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[domain](../interfaces/_beget_.begetclient.md#domain)*
 
-*Defined in [src/beget.ts:31](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L31)*
+*Defined in [src/beget.ts:31](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L31)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[ftp](../interfaces/_beget_.begetclient.md#ftp)*
 
-*Defined in [src/beget.ts:32](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L32)*
+*Defined in [src/beget.ts:32](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L32)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[mail](../interfaces/_beget_.begetclient.md#mail)*
 
-*Defined in [src/beget.ts:33](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L33)*
+*Defined in [src/beget.ts:33](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L33)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[mysql](../interfaces/_beget_.begetclient.md#mysql)*
 
-*Defined in [src/beget.ts:34](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L34)*
+*Defined in [src/beget.ts:34](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L34)*
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[site](../interfaces/_beget_.begetclient.md#site)*
 
-*Defined in [src/beget.ts:35](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L35)*
+*Defined in [src/beget.ts:35](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L35)*
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[stat](../interfaces/_beget_.begetclient.md#stat)*
 
-*Defined in [src/beget.ts:36](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L36)*
+*Defined in [src/beget.ts:36](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L36)*
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 *Implementation of [BegetClient](../interfaces/_beget_.begetclient.md).[user](../interfaces/_beget_.begetclient.md#user)*
 
-*Defined in [src/beget.ts:37](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L37)*
+*Defined in [src/beget.ts:37](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L37)*

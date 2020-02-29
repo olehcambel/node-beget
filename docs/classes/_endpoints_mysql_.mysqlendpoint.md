@@ -32,7 +32,7 @@
 
 \+ **new MysqlEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[MysqlEndpoint](_endpoints_mysql_.mysqlendpoint.md)*
 
-*Defined in [src/endpoints/mysql.ts:5](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L5)*
+*Defined in [src/endpoints/mysql.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L5)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/mysql.ts:6](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L6)*
+*Defined in [src/endpoints/mysql.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L6)*
 
 ## Methods
 
@@ -56,7 +56,7 @@ Name | Type |
 
 ▸ **addAccess**(`params`: [DBConf](../interfaces/_types_mysql_interface_.dbconf.md)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mysql.ts:36](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L36)*
+*Defined in [src/endpoints/mysql.ts:36](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L36)*
 
 The method adds the specified access to the specified MySql database.
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **addDb**(`params`: Pick‹[DBConf](../interfaces/_types_mysql_interface_.dbconf.md), "suffix" | "password"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mysql.ts:28](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L28)*
+*Defined in [src/endpoints/mysql.ts:28](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L28)*
 
 The method adds the task to the queue for creating a new MySql database with
 the specified suffix and creates access for localhost with the specified password.
@@ -98,7 +98,7 @@ ___
 
 ▸ **changeAccessPassword**(`params`: [DBConf](../interfaces/_types_mysql_interface_.dbconf.md)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mysql.ts:60](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L60)*
+*Defined in [src/endpoints/mysql.ts:60](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L60)*
 
 The method changes the password on the specified access.
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **dropAccess**(`params`: Pick‹[DBConf](../interfaces/_types_mysql_interface_.dbconf.md), "suffix" | "access"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mysql.ts:52](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L52)*
+*Defined in [src/endpoints/mysql.ts:52](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L52)*
 
 The method removes the specified access from the database.
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **dropDb**(`params`: Pick‹[DBConf](../interfaces/_types_mysql_interface_.dbconf.md), "suffix"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mysql.ts:44](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L44)*
+*Defined in [src/endpoints/mysql.ts:44](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L44)*
 
 The method deletes the specified database and all accesses to it.
 
@@ -158,7 +158,7 @@ ___
 
 ▸ **getList**(): *Promise‹[DB](../interfaces/_types_mysql_interface_.db.md)[]›*
 
-*Defined in [src/endpoints/mysql.ts:18](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L18)*
+*Defined in [src/endpoints/mysql.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L18)*
 
 The method returns a list of MySQL databases with their accesses.
 
@@ -170,7 +170,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["mysql"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/mysql.ts:11](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mysql.ts#L11)*
+*Defined in [src/endpoints/mysql.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mysql.ts#L11)*
 
 **Type parameters:**
 

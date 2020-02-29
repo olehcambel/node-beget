@@ -31,7 +31,7 @@
 
 • **backup**: *[BackupEndpoint](../classes/_endpoints_backup_.backupendpoint.md)*
 
-*Defined in [src/beget.ts:15](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L15)*
+*Defined in [src/beget.ts:15](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L15)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **cron**: *[CronEndpoint](../classes/_endpoints_cron_.cronendpoint.md)*
 
-*Defined in [src/beget.ts:16](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L16)*
+*Defined in [src/beget.ts:16](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L16)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **dns**: *[DnsEndpoint](../classes/_endpoints_dns_.dnsendpoint.md)*
 
-*Defined in [src/beget.ts:17](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L17)*
+*Defined in [src/beget.ts:17](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L17)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **domain**: *[DomainEndpoint](../classes/_endpoints_domain_.domainendpoint.md)*
 
-*Defined in [src/beget.ts:18](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L18)*
+*Defined in [src/beget.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L18)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **ftp**: *[FtpEndpoint](../classes/_endpoints_ftp_.ftpendpoint.md)*
 
-*Defined in [src/beget.ts:19](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L19)*
+*Defined in [src/beget.ts:19](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L19)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **mail**: *[MailEndpoint](../classes/_endpoints_mail_.mailendpoint.md)*
 
-*Defined in [src/beget.ts:20](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L20)*
+*Defined in [src/beget.ts:20](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L20)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **mysql**: *[MysqlEndpoint](../classes/_endpoints_mysql_.mysqlendpoint.md)*
 
-*Defined in [src/beget.ts:21](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L21)*
+*Defined in [src/beget.ts:21](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L21)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **site**: *[SiteEndpoint](../classes/_endpoints_site_.siteendpoint.md)*
 
-*Defined in [src/beget.ts:22](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L22)*
+*Defined in [src/beget.ts:22](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L22)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **stat**: *[StatEndpoint](../classes/_endpoints_stat_.statendpoint.md)*
 
-*Defined in [src/beget.ts:23](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L23)*
+*Defined in [src/beget.ts:23](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L23)*
 
 ___
 
@@ -103,4 +103,4 @@ ___
 
 • **user**: *[UserEndpoint](../classes/_endpoints_user_.userendpoint.md)*
 
-*Defined in [src/beget.ts:24](https://github.com/olehcambel/node-beget/blob/9994d31/src/beget.ts#L24)*
+*Defined in [src/beget.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/beget.ts#L24)*

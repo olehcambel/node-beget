@@ -30,7 +30,7 @@
 
 • **auto_renew**: *string*
 
-*Defined in [src/types/domain.interface.ts:24](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L24)*
+*Defined in [src/types/domain.interface.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L24)*
 
 'automatic domain renewal' option status
 
@@ -42,7 +42,7 @@ ___
 
 • **can_renew**: *string*
 
-*Defined in [src/types/domain.interface.ts:39](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L39)*
+*Defined in [src/types/domain.interface.ts:39](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L39)*
 
 renewal possibility status
 
@@ -54,7 +54,7 @@ ___
 
 • **date_add**: *string*
 
-*Defined in [src/types/domain.interface.ts:19](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L19)*
+*Defined in [src/types/domain.interface.ts:19](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L19)*
 
 date and time of domain creation
 
@@ -66,7 +66,7 @@ ___
 
 • **date_expire**: *number*
 
-*Defined in [src/types/domain.interface.ts:34](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L34)*
+*Defined in [src/types/domain.interface.ts:34](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L34)*
 
 expiration date of delegation (if under BeGet administration)
 
@@ -78,7 +78,7 @@ ___
 
 • **date_register**: *string*
 
-*Defined in [src/types/domain.interface.ts:29](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L29)*
+*Defined in [src/types/domain.interface.ts:29](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L29)*
 
 domain registration date (if under BeGet administration)
 
@@ -90,7 +90,7 @@ ___
 
 • **fqdn**: *string*
 
-*Defined in [src/types/domain.interface.ts:14](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L14)*
+*Defined in [src/types/domain.interface.ts:14](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L14)*
 
 full domain name
 
@@ -102,7 +102,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/domain.interface.ts:9](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L9)*
+*Defined in [src/types/domain.interface.ts:9](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L9)*
 
 domain ID
 
@@ -114,7 +114,7 @@ ___
 
 • **is_under_control**: *number*
 
-*Defined in [src/types/domain.interface.ts:76](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L76)*
+*Defined in [src/types/domain.interface.ts:76](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L76)*
 
 Status shows if domain is under BeGet administration.
 Defines possibility of operations, such as: domain renewal, ordering add.
@@ -126,7 +126,7 @@ ___
 
 • **register_order_comment**: *null | string*
 
-*Defined in [src/types/domain.interface.ts:63](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L63)*
+*Defined in [src/types/domain.interface.ts:63](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L63)*
 
 comment on registration order (mostly comment on reasons of order annulment)
 
@@ -138,7 +138,7 @@ ___
 
 • **register_order_status**: *null | [RegistarOrderStatus](../modules/_types_domain_interface_.md#registarorderstatus)*
 
-*Defined in [src/types/domain.interface.ts:58](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L58)*
+*Defined in [src/types/domain.interface.ts:58](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L58)*
 
 status of domain registration order (if domain was added to its registration order).
 
@@ -152,7 +152,7 @@ ___
 
 • **registrar**: *null | string*
 
-*Defined in [src/types/domain.interface.ts:44](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L44)*
+*Defined in [src/types/domain.interface.ts:44](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L44)*
 
 domain name registrar (if under BeGet administration)
 
@@ -164,7 +164,7 @@ ___
 
 • **registrar_status**: *null | [RegistarStatus](../modules/_types_domain_interface_.md#registarstatus)*
 
-*Defined in [src/types/domain.interface.ts:51](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L51)*
+*Defined in [src/types/domain.interface.ts:51](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L51)*
 
 domain status at registrar (if under BeGet administration).
 
@@ -178,7 +178,7 @@ ___
 
 • **renew_order_status**: *string*
 
-*Defined in [src/types/domain.interface.ts:70](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/domain.interface.ts#L70)*
+*Defined in [src/types/domain.interface.ts:70](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L70)*
 
 status of domain renewal order.
 

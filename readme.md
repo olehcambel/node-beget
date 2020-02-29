@@ -12,14 +12,15 @@
 - Manage domains settings;
 - Manage mailboxes.
 
-## Generated Documentation
+## Documentation
 
 [See](./docs/globals.md) documentation on endpoints in details
 
 ## example usage
 
-```ts
-import { Beget } from 'node-beget';
+```js
+const { Beget } = require('node-beget');
+// import { Beget } from 'node-beget';
 
 const begetConfig = { login: 'login', password: 'password' };
 const beget = new Beget(begetConfig);
@@ -29,13 +30,15 @@ const beget = new Beget(begetConfig);
 const accountInfo = await beget.user.getAccountInfo();
 
 // toggle ssh
-beget.user.toggleSsh(0);
+await beget.user.toggleSsh({ status: 1 });
+
+await beget.mysql.dropAccess({ suffix: 'suffix', access: 'localhost' });
+
 ```
 
-```ts
-// if you need only one endpoint
-
-import { UserEndpoint, BegetRequest } from 'node-beget';
+```js
+const { UserEndpoint, BegetRequest } = require('node-beget');
+// import { UserEndpoint, BegetRequest } from 'node-beget';
 
 const begetConfig = { login: 'login', password: 'password' };
 const begetClient = new BegetRequest(begetConfig);

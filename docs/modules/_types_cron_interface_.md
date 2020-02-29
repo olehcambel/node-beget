@@ -19,7 +19,7 @@
 
 Ƭ **ChangeHiddenState**: *Pick‹[Task](../interfaces/_types_cron_interface_.task.md), "row_number" | "is_hidden"›*
 
-*Defined in [src/types/cron.interface.ts:49](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/cron.interface.ts#L49)*
+*Defined in [src/types/cron.interface.ts:49](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L49)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 Ƭ **CreateTask**: *Pick‹[Task](../interfaces/_types_cron_interface_.task.md), "minutes" | "hours" | "days" | "months" | "weekdays" | "command"›*
 
-*Defined in [src/types/cron.interface.ts:44](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/cron.interface.ts#L44)*
+*Defined in [src/types/cron.interface.ts:44](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L44)*

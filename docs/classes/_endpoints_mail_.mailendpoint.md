@@ -36,7 +36,7 @@
 
 \+ **new MailEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[MailEndpoint](_endpoints_mail_.mailendpoint.md)*
 
-*Defined in [src/endpoints/mail.ts:5](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L5)*
+*Defined in [src/endpoints/mail.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L5)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/mail.ts:6](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L6)*
+*Defined in [src/endpoints/mail.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L6)*
 
 ## Methods
 
@@ -60,7 +60,7 @@ Name | Type |
 
 ▸ **changeMailboxPassword**(`params`: Mail.SetMailbox): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:26](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L26)*
+*Defined in [src/endpoints/mail.ts:26](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L26)*
 
 Method changes password to given mailbox.
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **changeMailboxSettings**(`params`: Mail.MailboxSettings): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:50](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L50)*
+*Defined in [src/endpoints/mail.ts:50](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L50)*
 
 Method sets options for mailbox.
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **clearDomainMail**(`params`: Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:92](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L92)*
+*Defined in [src/endpoints/mail.ts:92](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L92)*
 
 Method resets domain mail.
 
@@ -120,7 +120,7 @@ ___
 
 ▸ **createMailbox**(`params`: Mail.SetMailbox): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:34](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L34)*
+*Defined in [src/endpoints/mail.ts:34](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L34)*
 
 Method creates mailbox on given domain.
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **dropMailbox**(`params`: Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain" | "mailbox"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:42](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L42)*
+*Defined in [src/endpoints/mail.ts:42](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L42)*
 
 Method deletes mailbox on given domain.
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **forwardListAddMailbox**(`params`: Mail.ForwardList): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:58](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L58)*
+*Defined in [src/endpoints/mail.ts:58](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L58)*
 
 Method will add mailbox to list of mailboxes for forwarding.
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **forwardListDeleteMailbox**(`params`: Mail.ForwardList): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:67](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L67)*
+*Defined in [src/endpoints/mail.ts:67](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L67)*
 
 Method deletes mailbox from list of mailboxes for forwarding.
 
@@ -200,7 +200,7 @@ ___
 
 ▸ **forwardListShow**(`params`: Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain" | "mailbox"›): *Promise‹Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "forward_mailbox"›[]›*
 
-*Defined in [src/endpoints/mail.ts:74](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L74)*
+*Defined in [src/endpoints/mail.ts:74](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L74)*
 
 Method returns forwarding list for indicated mailbox.
 
@@ -218,7 +218,7 @@ ___
 
 ▸ **getMailboxList**(`params`: Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain"›): *Promise‹Mail.GetMailbox[]›*
 
-*Defined in [src/endpoints/mail.ts:18](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L18)*
+*Defined in [src/endpoints/mail.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L18)*
 
 Method returns all mailboxes on given domain.
 
@@ -236,7 +236,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["mail"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/mail.ts:11](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L11)*
+*Defined in [src/endpoints/mail.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L11)*
 
 **Type parameters:**
 
@@ -257,7 +257,7 @@ ___
 
 ▸ **setDomainMail**(`params`: Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain" | "domain_mailbox"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/mail.ts:84](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/mail.ts#L84)*
+*Defined in [src/endpoints/mail.ts:84](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/mail.ts#L84)*
 
 Method sets up domain mail.
 

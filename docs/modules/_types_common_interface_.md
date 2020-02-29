@@ -21,4 +21,4 @@
 
 Ƭ **ResponseError**: *[ResponseErrorMethod](../interfaces/_types_common_interface_.responseerrormethod.md) | [ResponseErrorQuery](../interfaces/_types_common_interface_.responseerrorquery.md)*
 
-*Defined in [src/types/common.interface.ts:1](https://github.com/olehcambel/node-beget/blob/9994d31/src/types/common.interface.ts#L1)*
+*Defined in [src/types/common.interface.ts:1](https://github.com/olehcambel/node-beget/blob/530258f/src/types/common.interface.ts#L1)*

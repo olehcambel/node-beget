@@ -32,7 +32,7 @@
 
 \+ **new CronEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[CronEndpoint](_endpoints_cron_.cronendpoint.md)*
 
-*Defined in [src/endpoints/cron.ts:5](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L5)*
+*Defined in [src/endpoints/cron.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L5)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/cron.ts:6](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L6)*
+*Defined in [src/endpoints/cron.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L6)*
 
 ## Methods
 
@@ -56,7 +56,7 @@ Name | Type |
 
 ▸ **add**(`params`: [CreateTask](../modules/_types_cron_interface_.md#createtask)): *Promise‹Pick‹[Task](../interfaces/_types_cron_interface_.task.md), "row_number"››*
 
-*Defined in [src/endpoints/cron.ts:27](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L27)*
+*Defined in [src/endpoints/cron.ts:27](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L27)*
 
 Method adds new task. Task will be active upon adding.
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **changeHiddenState**(`params`: [ChangeHiddenState](../modules/_types_cron_interface_.md#changehiddenstate)): *Promise‹Pick‹[Task](../interfaces/_types_cron_interface_.task.md), "row_number"››*
 
-*Defined in [src/endpoints/cron.ts:43](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L43)*
+*Defined in [src/endpoints/cron.ts:43](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L43)*
 
 Method will change task status.
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **delete**(`params`: Pick‹[Task](../interfaces/_types_cron_interface_.task.md), "row_number"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/cron.ts:35](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L35)*
+*Defined in [src/endpoints/cron.ts:35](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L35)*
 
 Method will delete task with given ID.
 
@@ -116,7 +116,7 @@ ___
 
 ▸ **getEmail**(): *Promise‹string | null›*
 
-*Defined in [src/endpoints/cron.ts:51](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L51)*
+*Defined in [src/endpoints/cron.ts:51](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L51)*
 
 Method returns email, where the display of executed tasks is sent.
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **getList**(): *Promise‹[Task](../interfaces/_types_cron_interface_.task.md)[]›*
 
-*Defined in [src/endpoints/cron.ts:19](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L19)*
+*Defined in [src/endpoints/cron.ts:19](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L19)*
 
 Method returns list of all CronTab tasks.
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["cron"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/cron.ts:11](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L11)*
+*Defined in [src/endpoints/cron.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L11)*
 
 **Type parameters:**
 
@@ -165,7 +165,7 @@ ___
 
 ▸ **setEmail**(`email`: string): *Promise‹boolean›*
 
-*Defined in [src/endpoints/cron.ts:60](https://github.com/olehcambel/node-beget/blob/9994d31/src/endpoints/cron.ts#L60)*
+*Defined in [src/endpoints/cron.ts:60](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/cron.ts#L60)*
 
 Method sets email, where the display of executed tasks will be sent.
 

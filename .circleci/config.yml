@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  coveralls: coveralls/coveralls@1.0.4
 jobs:
   build-and-test:
     executor:
@@ -13,6 +14,7 @@ jobs:
             - run: npm run build
             - run: npm run lint
             - run: npm test
+      - coveralls/upload
     
 workflows:
   build-and-test:

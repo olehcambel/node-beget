@@ -18,6 +18,9 @@
     "type": "git",
     "url": "https://github.com/olehcambel/node-beget.git"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "keywords": [
     "beget",
     "api",

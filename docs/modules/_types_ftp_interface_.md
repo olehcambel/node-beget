@@ -18,4 +18,4 @@
 
 Ƭ **AddAccount**: *Pick‹[Account](../interfaces/_types_ftp_interface_.account.md), "suffix" | "homedir" | "password"›*
 
-*Defined in [src/types/ftp.interface.ts:23](https://github.com/olehcambel/node-beget/blob/530258f/src/types/ftp.interface.ts#L23)*
+*Defined in [src/types/ftp.interface.ts:23](https://github.com/olehcambel/node-beget/blob/f128411/src/types/ftp.interface.ts#L23)*

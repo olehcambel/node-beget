@@ -19,7 +19,7 @@
 
 • **name**: *string*
 
-*Defined in [src/types/domain.interface.ts:264](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L264)*
+*Defined in [src/types/domain.interface.ts:264](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L264)*
 
 directive name
 
@@ -31,7 +31,7 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/types/domain.interface.ts:269](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L269)*
+*Defined in [src/types/domain.interface.ts:269](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L269)*
 
 its meaning
 

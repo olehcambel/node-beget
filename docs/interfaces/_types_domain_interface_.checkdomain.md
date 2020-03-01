@@ -20,7 +20,7 @@
 
 • **hostname**: *string*
 
-*Defined in [src/types/domain.interface.ts:164](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L164)*
+*Defined in [src/types/domain.interface.ts:164](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L164)*
 
 domain name without zone;
 
@@ -30,7 +30,7 @@ ___
 
 • **period**: *number*
 
-*Defined in [src/types/domain.interface.ts:172](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L172)*
+*Defined in [src/types/domain.interface.ts:172](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L172)*
 
 registration period (in years), type int.
 
@@ -40,6 +40,6 @@ ___
 
 • **zone_id**: *number*
 
-*Defined in [src/types/domain.interface.ts:168](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L168)*
+*Defined in [src/types/domain.interface.ts:168](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L168)*
 
 zone ID, you can receive a zone list through the method getZoneList;

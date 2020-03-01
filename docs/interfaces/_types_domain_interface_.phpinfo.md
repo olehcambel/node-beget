@@ -23,7 +23,7 @@
 
 • **allowed_versions**: *string[]*
 
-*Defined in [src/types/domain.interface.ts:236](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L236)*
+*Defined in [src/types/domain.interface.ts:236](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L236)*
 
 **`example`** ['4.4', '5.2', '5.3', '5.4', '5.5', '5.6']
 
@@ -33,7 +33,7 @@ ___
 
 • **cgi**: *[CGI](../modules/_types_domain_interface_.md#cgi)*
 
-*Defined in [src/types/domain.interface.ts:232](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L232)*
+*Defined in [src/types/domain.interface.ts:232](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L232)*
 
 is cgi mode enabled
 
@@ -45,7 +45,7 @@ ___
 
 • **full_fqdn**: *string*
 
-*Defined in [src/types/domain.interface.ts:222](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L222)*
+*Defined in [src/types/domain.interface.ts:222](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L222)*
 
 domain with which php version and cgi mode were changed
 
@@ -57,7 +57,7 @@ ___
 
 • **is_cgi**: *boolean*
 
-*Defined in [src/types/domain.interface.ts:244](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L244)*
+*Defined in [src/types/domain.interface.ts:244](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L244)*
 
 set or remove cgi mode. Defaults to false;
 
@@ -67,7 +67,7 @@ ___
 
 • **php_version**: *string*
 
-*Defined in [src/types/domain.interface.ts:227](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L227)*
+*Defined in [src/types/domain.interface.ts:227](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L227)*
 
 version of php after the current request
 
@@ -79,6 +79,6 @@ ___
 
 • **result**: *string*
 
-*Defined in [src/types/domain.interface.ts:240](https://github.com/olehcambel/node-beget/blob/530258f/src/types/domain.interface.ts#L240)*
+*Defined in [src/types/domain.interface.ts:240](https://github.com/olehcambel/node-beget/blob/f128411/src/types/domain.interface.ts#L240)*
 
 changes may take some time

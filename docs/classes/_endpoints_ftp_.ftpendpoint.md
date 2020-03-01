@@ -30,7 +30,7 @@
 
 \+ **new FtpEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[FtpEndpoint](_endpoints_ftp_.ftpendpoint.md)*
 
-*Defined in [src/endpoints/ftp.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L5)*
+*Defined in [src/endpoints/ftp.ts:5](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L5)*
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/ftp.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L6)*
+*Defined in [src/endpoints/ftp.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L6)*
 
 ## Methods
 
@@ -54,7 +54,7 @@ Name | Type |
 
 ▸ **add**(`params`: [AddAccount](../modules/_types_ftp_interface_.md#addaccount)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/ftp.ts:26](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L26)*
+*Defined in [src/endpoints/ftp.ts:26](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L26)*
 
 Method adds new FTP account.
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **changePassword**(`params`: Pick‹[Account](../interfaces/_types_ftp_interface_.account.md), "suffix" | "password"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/ftp.ts:34](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L34)*
+*Defined in [src/endpoints/ftp.ts:34](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L34)*
 
 Method performs password change for additional FTP account.
 
@@ -94,7 +94,7 @@ ___
 
 ▸ **delete**(`params`: Pick‹[Account](../interfaces/_types_ftp_interface_.account.md), "suffix"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/ftp.ts:42](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L42)*
+*Defined in [src/endpoints/ftp.ts:42](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L42)*
 
 Method deletes additional FTP account with given suffix.
 
@@ -114,7 +114,7 @@ ___
 
 ▸ **getList**(): *Promise‹[Account](../interfaces/_types_ftp_interface_.account.md)[]›*
 
-*Defined in [src/endpoints/ftp.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L18)*
+*Defined in [src/endpoints/ftp.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L18)*
 
 Method returns list of additional FTP accounts with their home directories.
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["ftp"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/ftp.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/ftp.ts#L11)*
+*Defined in [src/endpoints/ftp.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/ftp.ts#L11)*
 
 **Type parameters:**
 

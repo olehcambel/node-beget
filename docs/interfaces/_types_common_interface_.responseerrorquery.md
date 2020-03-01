@@ -24,7 +24,7 @@
 
 *Inherited from [ResponseErrorQuery](_types_common_interface_.responseerrorquery.md).[error_code](_types_common_interface_.responseerrorquery.md#error_code)*
 
-*Defined in [src/types/common.interface.ts:25](https://github.com/olehcambel/node-beget/blob/530258f/src/types/common.interface.ts#L25)*
+*Defined in [src/types/common.interface.ts:25](https://github.com/olehcambel/node-beget/blob/f128411/src/types/common.interface.ts#L25)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 *Inherited from [ResponseErrorQuery](_types_common_interface_.responseerrorquery.md).[error_text](_types_common_interface_.responseerrorquery.md#error_text)*
 
-*Defined in [src/types/common.interface.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/types/common.interface.ts#L24)*
+*Defined in [src/types/common.interface.ts:24](https://github.com/olehcambel/node-beget/blob/f128411/src/types/common.interface.ts#L24)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **status**: *"error"*
 
-*Defined in [src/types/common.interface.ts:20](https://github.com/olehcambel/node-beget/blob/530258f/src/types/common.interface.ts#L20)*
+*Defined in [src/types/common.interface.ts:20](https://github.com/olehcambel/node-beget/blob/f128411/src/types/common.interface.ts#L20)*

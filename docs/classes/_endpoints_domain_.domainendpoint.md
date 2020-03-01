@@ -39,7 +39,7 @@
 
 \+ **new DomainEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[DomainEndpoint](_endpoints_domain_.domainendpoint.md)*
 
-*Defined in [src/endpoints/domain.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L5)*
+*Defined in [src/endpoints/domain.ts:5](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L5)*
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/domain.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L6)*
+*Defined in [src/endpoints/domain.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L6)*
 
 ## Methods
 
@@ -63,7 +63,7 @@ Name | Type |
 
 ▸ **addDirectives**(`params`: [SearchDirective](../interfaces/_types_domain_interface_.searchdirective.md)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/domain.ts:119](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L119)*
+*Defined in [src/endpoints/domain.ts:119](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L119)*
 
 The method adds custom directives for the specified domain
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **addSubdomainVirtual**(`params`: [AddSubdomain](../interfaces/_types_domain_interface_.addsubdomain.md)): *Promise‹number›*
 
-*Defined in [src/endpoints/domain.ts:57](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L57)*
+*Defined in [src/endpoints/domain.ts:57](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L57)*
 
 Method adds given subdomain.
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **addVirtual**(`params`: Domain.AddVirtual): *Promise‹number›*
 
-*Defined in [src/endpoints/domain.ts:33](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L33)*
+*Defined in [src/endpoints/domain.ts:33](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L33)*
 
 Method adds domain.
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **changePhpVersion**(`params`: Domain.UpdatePhpVersion): *Promise‹Domain.UpdatePhpVersionResponse›*
 
-*Defined in [src/endpoints/domain.ts:101](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L101)*
+*Defined in [src/endpoints/domain.ts:101](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L101)*
 
 The method changes the php version to the transferred one.
 Allows you to set and remove cgi mode
@@ -140,7 +140,7 @@ ___
 
 ▸ **checkDomainToRegister**(`params`: [CheckDomain](../interfaces/_types_domain_interface_.checkdomain.md)): *Promise‹[RegistrationPossibility](../interfaces/_types_domain_interface_.registrationpossibility.md)›*
 
-*Defined in [src/endpoints/domain.ts:83](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L83)*
+*Defined in [src/endpoints/domain.ts:83](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L83)*
 
 Method returns information about registration possibility for given domain name.
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **delete**(`params`: Pick‹[Subdomain](../interfaces/_types_domain_interface_.subdomain.md), "id"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/domain.ts:42](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L42)*
+*Defined in [src/endpoints/domain.ts:42](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L42)*
 
 Method deletes domain. If the domain was linked to a website,
 it will be unlinked from it. All subdomains of this domain will be deleted.
@@ -190,7 +190,7 @@ ___
 
 ▸ **deleteSubdomain**(`params`: Pick‹[Subdomain](../interfaces/_types_domain_interface_.subdomain.md), "id"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/domain.ts:65](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L65)*
+*Defined in [src/endpoints/domain.ts:65](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L65)*
 
 Method deletes given subdomain.
 
@@ -210,7 +210,7 @@ ___
 
 ▸ **getDirectives**(`params`: Pick‹[SearchDirective](../interfaces/_types_domain_interface_.searchdirective.md), "full_fqdn"›): *Promise‹[Directive](../interfaces/_types_domain_interface_.directive.md)›*
 
-*Defined in [src/endpoints/domain.ts:110](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L110)*
+*Defined in [src/endpoints/domain.ts:110](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L110)*
 
 The method returns custom directives for the specified domain
 
@@ -228,7 +228,7 @@ ___
 
 ▸ **getList**(): *Promise‹[Domain](../interfaces/_types_domain_interface_.domain.md)[]›*
 
-*Defined in [src/endpoints/domain.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L18)*
+*Defined in [src/endpoints/domain.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L18)*
 
 Method returns list of domains on user account.
 
@@ -240,7 +240,7 @@ ___
 
 ▸ **getPhpVersion**(): *Promise‹Domain.PhpVersion›*
 
-*Defined in [src/endpoints/domain.ts:93](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L93)*
+*Defined in [src/endpoints/domain.ts:93](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L93)*
 
 The method returns information about the current version of php for the domain,
 whether php is enabled as cgi and php versions available for installation
@@ -253,7 +253,7 @@ ___
 
 ▸ **getSubdomainList**(): *Promise‹[Subdomain](../interfaces/_types_domain_interface_.subdomain.md)[]›*
 
-*Defined in [src/endpoints/domain.ts:49](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L49)*
+*Defined in [src/endpoints/domain.ts:49](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L49)*
 
 Method returns subdomain list.
 
@@ -265,7 +265,7 @@ ___
 
 ▸ **getZoneList**(): *Promise‹Domain.ZoneList›*
 
-*Defined in [src/endpoints/domain.ts:25](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L25)*
+*Defined in [src/endpoints/domain.ts:25](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L25)*
 
 Method returns zone list.
 
@@ -277,7 +277,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["domain"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/domain.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L11)*
+*Defined in [src/endpoints/domain.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L11)*
 
 **Type parameters:**
 
@@ -298,7 +298,7 @@ ___
 
 ▸ **removeDirectives**(`params`: [SearchDirective](../interfaces/_types_domain_interface_.searchdirective.md)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/domain.ts:126](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/domain.ts#L126)*
+*Defined in [src/endpoints/domain.ts:126](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/domain.ts#L126)*
 
 The method removes user directives for the specified domain
 

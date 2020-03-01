@@ -23,4 +23,4 @@
 
 Ƭ **AvarageLoadDB**: *Pick‹[AvarageLoad](../interfaces/_types_stat_interface_.avarageload.md), "name" | "cp"›*
 
-*Defined in [src/types/stat.interface.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L18)*
+*Defined in [src/types/stat.interface.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L18)*

@@ -19,7 +19,7 @@
 
 • **ftplogin**? : *string*
 
-*Defined in [src/types/user.interface.ts:168](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L168)*
+*Defined in [src/types/user.interface.ts:168](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L168)*
 
 ftp account login, if passed enables/disables SSH access * to ftp account;
 if not passed, enables/disables SSH access to main user account;
@@ -30,6 +30,6 @@ ___
 
 • **status**: *0 | 1*
 
-*Defined in [src/types/user.interface.ts:163](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L163)*
+*Defined in [src/types/user.interface.ts:163](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L163)*
 
 1 - enable, 0 - disable

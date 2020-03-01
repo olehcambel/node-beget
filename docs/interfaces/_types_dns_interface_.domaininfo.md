@@ -23,7 +23,7 @@
 
 • **fqdn**: *string*
 
-*Defined in [src/types/dns.interface.ts:37](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L37)*
+*Defined in [src/types/dns.interface.ts:37](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L37)*
 
 passed domain name
 
@@ -35,7 +35,7 @@ ___
 
 • **is_beget_dns**: *0 | 1*
 
-*Defined in [src/types/dns.interface.ts:28](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L28)*
+*Defined in [src/types/dns.interface.ts:28](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L28)*
 
 domain is on BeGet DNS servers (0 - no / 1 - yes)
 
@@ -45,7 +45,7 @@ ___
 
 • **is_subdomain**: *0 | 1*
 
-*Defined in [src/types/dns.interface.ts:32](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L32)*
+*Defined in [src/types/dns.interface.ts:32](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L32)*
 
 is the domain a subdomain (0 - no / 1 - yes)
 
@@ -55,7 +55,7 @@ ___
 
 • **is_under_control**: *0 | 1*
 
-*Defined in [src/types/dns.interface.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L24)*
+*Defined in [src/types/dns.interface.ts:24](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L24)*
 
 domain is under BeGet administration (0 - no / 1 - yes)
 
@@ -65,7 +65,7 @@ ___
 
 • **records**: *[DNSRecords](../modules/_types_dns_interface_.md#dnsrecords)*
 
-*Defined in [src/types/dns.interface.ts:41](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L41)*
+*Defined in [src/types/dns.interface.ts:41](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L41)*
 
 currently used DNS records
 
@@ -75,7 +75,7 @@ ___
 
 • **set_type**: *number*
 
-*Defined in [src/types/dns.interface.ts:48](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L48)*
+*Defined in [src/types/dns.interface.ts:48](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L48)*
 
 type of currently used settings:
 1 - A, MX, TXT records used;

@@ -20,7 +20,7 @@
 
 • **accesses**: *object[]*
 
-*Defined in [src/types/mysql.interface.ts:4](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L4)*
+*Defined in [src/types/mysql.interface.ts:4](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mysql.interface.ts#L4)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **name**: *"user_mydb"*
 
-*Defined in [src/types/mysql.interface.ts:2](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L2)*
+*Defined in [src/types/mysql.interface.ts:2](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mysql.interface.ts#L2)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **size**: *"1"*
 
-*Defined in [src/types/mysql.interface.ts:3](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mysql.interface.ts#L3)*
+*Defined in [src/types/mysql.interface.ts:3](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mysql.interface.ts#L3)*

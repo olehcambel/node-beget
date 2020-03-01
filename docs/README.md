@@ -4,17 +4,25 @@
 
 ## Introduction
 
-> Client library for accessing Beget API. Beget.API will allow to use most features of the administration panel directly from your own scripts, content management systems (CMS) and other software products.
+> [Beget](https://beget.com/en) wrapper for NodeJS. BegetAPI will allow to use most features of the administration panel directly from your own scripts, content management systems (CMS) and other software products.
+
+<!-- [![npm package](https://nodei.co/npm/node-beget.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-beget/) -->
+
+[![NPM version](https://badge.fury.io/js/node-beget.png)](http://badge.fury.io/js/node-beget)
+[![CircleCI](https://circleci.com/gh/olehcambel/node-beget.svg?style=svg)](https://circleci.com/gh/olehcambel/node-beget)
+[![Coverage Status](https://coveralls.io/repos/github/olehcambel/node-beget/badge.svg?branch=master)](https://coveralls.io/github/olehcambel/node-beget?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/olehcambel/node-beget/badge.svg?targetFile=package.json)](https://snyk.io/test/github/olehcambel/node-beget?targetFile=package.json)
 
 ### What can I do using Beget.API?
-- Receive information about the web hosting account;
-- Administer security backups;
-- Administer the task planner;
-- Adjust DNS;
-- Administer databases;
-- Create and delete websites on account;
-- Manage domains settings;
-- Manage mailboxes.
+
+-   Receive information about the web hosting account;
+-   Administer security backups;
+-   Administer the task planner;
+-   Adjust DNS;
+-   Administer databases;
+-   Create and delete websites on account;
+-   Manage domains settings;
+-   Manage mailboxes.
 
 ## Documentation
 
@@ -37,7 +45,6 @@ const accountInfo = await beget.user.getAccountInfo();
 await beget.user.toggleSsh({ status: 1 });
 
 await beget.mysql.dropAccess({ suffix: 'suffix', access: 'localhost' });
-
 ```
 
 ```js

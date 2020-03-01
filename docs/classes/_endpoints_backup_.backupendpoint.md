@@ -35,7 +35,7 @@
 
 \+ **new BackupEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[BackupEndpoint](_endpoints_backup_.backupendpoint.md)*
 
-*Defined in [src/endpoints/backup.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L5)*
+*Defined in [src/endpoints/backup.ts:5](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L5)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/backup.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L6)*
+*Defined in [src/endpoints/backup.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L6)*
 
 ## Methods
 
@@ -59,7 +59,7 @@ Name | Type |
 
 ▸ **downloadFile**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id" | "paths"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/backup.ts:67](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L67)*
+*Defined in [src/endpoints/backup.ts:67](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L67)*
 
 Method creates query for up- and downloading data from backup to account root.
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **downloadMysql**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id" | "bases"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/backup.ts:74](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L74)*
+*Defined in [src/endpoints/backup.ts:74](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L74)*
 
 Method creates query for up- and downloading of data from backup to account root.
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **getFileBackupList**(): *Promise‹[FileBackup](../interfaces/_types_backup_interface_.filebackup.md)[]›*
 
-*Defined in [src/endpoints/backup.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L18)*
+*Defined in [src/endpoints/backup.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L18)*
 
 Method returns available list of file backups.
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **getFileList**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id" | "path"›): *Promise‹[FileInfo](../interfaces/_types_backup_interface_.fileinfo.md)[]›*
 
-*Defined in [src/endpoints/backup.ts:33](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L33)*
+*Defined in [src/endpoints/backup.ts:33](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L33)*
 
 Method returns a list of files and directories from a backup according to
 the given path and identifier.
@@ -128,7 +128,7 @@ ___
 
 ▸ **getLog**(): *Promise‹[LogTask](../interfaces/_types_backup_interface_.logtask.md)[]›*
 
-*Defined in [src/endpoints/backup.ts:81](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L81)*
+*Defined in [src/endpoints/backup.ts:81](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L81)*
 
 Method returns list and statuses of tasks for recovery and downloading.
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **getMysqlBackupList**(): *Promise‹[FileBackup](../interfaces/_types_backup_interface_.filebackup.md)[]›*
 
-*Defined in [src/endpoints/backup.ts:25](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L25)*
+*Defined in [src/endpoints/backup.ts:25](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L25)*
 
 Method returns available list of mysql database backups
 
@@ -152,7 +152,7 @@ ___
 
 ▸ **getMysqlList**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id"›): *Promise‹string[]›*
 
-*Defined in [src/endpoints/backup.ts:41](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L41)*
+*Defined in [src/endpoints/backup.ts:41](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L41)*
 
 Method returns a list of databases from backup respective given identifier.
 
@@ -172,7 +172,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["backup"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/backup.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L11)*
+*Defined in [src/endpoints/backup.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L11)*
 
 **Type parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 ▸ **restoreFile**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id" | "paths"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/backup.ts:50](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L50)*
+*Defined in [src/endpoints/backup.ts:50](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L50)*
 
 Method creates query for data restoring from backup according to given path
 and backup copy.
@@ -214,7 +214,7 @@ ___
 
 ▸ **restoreMysql**(`params?`: Pick‹[Mysql](../interfaces/_types_backup_interface_.mysql.md), "backup_id" | "bases"›): *Promise‹boolean›*
 
-*Defined in [src/endpoints/backup.ts:59](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/backup.ts#L59)*
+*Defined in [src/endpoints/backup.ts:59](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/backup.ts#L59)*
 
 Method creates query for DB recovery from backup according to
 given DB name and backup identifier.

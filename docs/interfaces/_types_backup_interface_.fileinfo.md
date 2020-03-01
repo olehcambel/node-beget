@@ -21,7 +21,7 @@
 
 • **is_dir**: *0 | 1*
 
-*Defined in [src/types/backup.interface.ts:22](https://github.com/olehcambel/node-beget/blob/530258f/src/types/backup.interface.ts#L22)*
+*Defined in [src/types/backup.interface.ts:22](https://github.com/olehcambel/node-beget/blob/f128411/src/types/backup.interface.ts#L22)*
 
 property of file (0) or folder (1);
 
@@ -33,7 +33,7 @@ ___
 
 • **mtime**: *string*
 
-*Defined in [src/types/backup.interface.ts:27](https://github.com/olehcambel/node-beget/blob/530258f/src/types/backup.interface.ts#L27)*
+*Defined in [src/types/backup.interface.ts:27](https://github.com/olehcambel/node-beget/blob/f128411/src/types/backup.interface.ts#L27)*
 
 file creation time in format "Y-m-d H:i:s";
 
@@ -45,7 +45,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/backup.interface.ts:17](https://github.com/olehcambel/node-beget/blob/530258f/src/types/backup.interface.ts#L17)*
+*Defined in [src/types/backup.interface.ts:17](https://github.com/olehcambel/node-beget/blob/f128411/src/types/backup.interface.ts#L17)*
 
 name of file or folder;
 
@@ -57,7 +57,7 @@ ___
 
 • **size**: *number*
 
-*Defined in [src/types/backup.interface.ts:32](https://github.com/olehcambel/node-beget/blob/530258f/src/types/backup.interface.ts#L32)*
+*Defined in [src/types/backup.interface.ts:32](https://github.com/olehcambel/node-beget/blob/f128411/src/types/backup.interface.ts#L32)*
 
 size in bytes;
 

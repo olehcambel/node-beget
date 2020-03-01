@@ -48,7 +48,7 @@
 
 • **plan_domain**: *number*
 
-*Defined in [src/types/user.interface.ts:26](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L26)*
+*Defined in [src/types/user.interface.ts:26](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L26)*
 
 Maximim domain number
 
@@ -60,7 +60,7 @@ ___
 
 • **plan_ftp**: *number*
 
-*Defined in [src/types/user.interface.ts:56](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L56)*
+*Defined in [src/types/user.interface.ts:56](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L56)*
 
 Myximum number of FTP accounts
 
@@ -72,7 +72,7 @@ ___
 
 • **plan_mail**: *number*
 
-*Defined in [src/types/user.interface.ts:66](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L66)*
+*Defined in [src/types/user.interface.ts:66](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L66)*
 
 Maximim mailbox number
 
@@ -84,7 +84,7 @@ ___
 
 • **plan_mysql**: *number*
 
-*Defined in [src/types/user.interface.ts:36](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L36)*
+*Defined in [src/types/user.interface.ts:36](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L36)*
 
 Maximum MySQL DB count
 
@@ -96,7 +96,7 @@ ___
 
 • **plan_name**: *string*
 
-*Defined in [src/types/user.interface.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L6)*
+*Defined in [src/types/user.interface.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L6)*
 
 Tariff name
 
@@ -108,7 +108,7 @@ ___
 
 • **plan_quota**: *number*
 
-*Defined in [src/types/user.interface.ts:46](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L46)*
+*Defined in [src/types/user.interface.ts:46](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L46)*
 
 Maximum disk quota size
 
@@ -120,7 +120,7 @@ ___
 
 • **plan_site**: *number*
 
-*Defined in [src/types/user.interface.ts:16](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L16)*
+*Defined in [src/types/user.interface.ts:16](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L16)*
 
 Maximum website number
 
@@ -132,7 +132,7 @@ ___
 
 • **server_apache_version**: *string*
 
-*Defined in [src/types/user.interface.ts:101](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L101)*
+*Defined in [src/types/user.interface.ts:101](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L101)*
 
 Apache version
 
@@ -144,7 +144,7 @@ ___
 
 • **server_cpu_name**: *string*
 
-*Defined in [src/types/user.interface.ts:136](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L136)*
+*Defined in [src/types/user.interface.ts:136](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L136)*
 
 Processors
 
@@ -156,7 +156,7 @@ ___
 
 • **server_loadaverage**: *string*
 
-*Defined in [src/types/user.interface.ts:151](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L151)*
+*Defined in [src/types/user.interface.ts:151](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L151)*
 
 Current Load Average
 
@@ -168,7 +168,7 @@ ___
 
 • **server_memory**: *string*
 
-*Defined in [src/types/user.interface.ts:141](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L141)*
+*Defined in [src/types/user.interface.ts:141](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L141)*
 
 RAM size (Mb)
 
@@ -180,7 +180,7 @@ ___
 
 • **server_memorycurrent**: *number*
 
-*Defined in [src/types/user.interface.ts:146](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L146)*
+*Defined in [src/types/user.interface.ts:146](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L146)*
 
 Size of used RAM
 
@@ -192,7 +192,7 @@ ___
 
 • **server_mysql_version**: *string*
 
-*Defined in [src/types/user.interface.ts:106](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L106)*
+*Defined in [src/types/user.interface.ts:106](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L106)*
 
 MySQL version
 
@@ -204,7 +204,7 @@ ___
 
 • **server_name**: *string*
 
-*Defined in [src/types/user.interface.ts:131](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L131)*
+*Defined in [src/types/user.interface.ts:131](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L131)*
 
 Server name
 
@@ -216,7 +216,7 @@ ___
 
 • **server_nginx_version**: *string*
 
-*Defined in [src/types/user.interface.ts:111](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L111)*
+*Defined in [src/types/user.interface.ts:111](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L111)*
 
 Nginx version
 
@@ -228,7 +228,7 @@ ___
 
 • **server_perl_version**: *string*
 
-*Defined in [src/types/user.interface.ts:116](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L116)*
+*Defined in [src/types/user.interface.ts:116](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L116)*
 
 Perl version
 
@@ -240,7 +240,7 @@ ___
 
 • **server_php_version**: *string*
 
-*Defined in [src/types/user.interface.ts:121](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L121)*
+*Defined in [src/types/user.interface.ts:121](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L121)*
 
 PHP version
 
@@ -252,7 +252,7 @@ ___
 
 • **server_python_version**: *string*
 
-*Defined in [src/types/user.interface.ts:126](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L126)*
+*Defined in [src/types/user.interface.ts:126](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L126)*
 
 Python version
 
@@ -264,7 +264,7 @@ ___
 
 • **server_uptime**: *string*
 
-*Defined in [src/types/user.interface.ts:156](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L156)*
+*Defined in [src/types/user.interface.ts:156](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L156)*
 
 Uptime
 
@@ -276,7 +276,7 @@ ___
 
 • **user_balance**: *number*
 
-*Defined in [src/types/user.interface.ts:96](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L96)*
+*Defined in [src/types/user.interface.ts:96](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L96)*
 
 Current user balance
 
@@ -288,7 +288,7 @@ ___
 
 • **user_bash**: *string*
 
-*Defined in [src/types/user.interface.ts:71](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L71)*
+*Defined in [src/types/user.interface.ts:71](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L71)*
 
 Used bash
 
@@ -300,7 +300,7 @@ ___
 
 • **user_domains**: *number*
 
-*Defined in [src/types/user.interface.ts:21](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L21)*
+*Defined in [src/types/user.interface.ts:21](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L21)*
 
 Actual domain number
 
@@ -312,7 +312,7 @@ ___
 
 • **user_ftp**: *number*
 
-*Defined in [src/types/user.interface.ts:51](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L51)*
+*Defined in [src/types/user.interface.ts:51](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L51)*
 
 Actual number of FTP accounts
 
@@ -324,7 +324,7 @@ ___
 
 • **user_is_year_plan**: *string*
 
-*Defined in [src/types/user.interface.ts:81](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L81)*
+*Defined in [src/types/user.interface.ts:81](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L81)*
 
 Is an annual discount being used
 
@@ -336,7 +336,7 @@ ___
 
 • **user_mail**: *number*
 
-*Defined in [src/types/user.interface.ts:61](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L61)*
+*Defined in [src/types/user.interface.ts:61](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L61)*
 
 Actual mailbox number
 
@@ -348,7 +348,7 @@ ___
 
 • **user_mysqlsize**: *number*
 
-*Defined in [src/types/user.interface.ts:31](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L31)*
+*Defined in [src/types/user.interface.ts:31](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L31)*
 
 Actual MySQL DB size
 
@@ -360,7 +360,7 @@ ___
 
 • **user_quota**: *number*
 
-*Defined in [src/types/user.interface.ts:41](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L41)*
+*Defined in [src/types/user.interface.ts:41](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L41)*
 
 Size of used disk quota
 
@@ -372,7 +372,7 @@ ___
 
 • **user_rate_current**: *string*
 
-*Defined in [src/types/user.interface.ts:76](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L76)*
+*Defined in [src/types/user.interface.ts:76](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L76)*
 
 Current price of tariff plan per day
 
@@ -384,7 +384,7 @@ ___
 
 • **user_rate_month**: *number*
 
-*Defined in [src/types/user.interface.ts:91](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L91)*
+*Defined in [src/types/user.interface.ts:91](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L91)*
 
 Current tariff price per month
 
@@ -396,7 +396,7 @@ ___
 
 • **user_rate_year**: *number*
 
-*Defined in [src/types/user.interface.ts:86](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L86)*
+*Defined in [src/types/user.interface.ts:86](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L86)*
 
 Current tariff price per year
 
@@ -408,7 +408,7 @@ ___
 
 • **user_sites**: *number*
 
-*Defined in [src/types/user.interface.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/types/user.interface.ts#L11)*
+*Defined in [src/types/user.interface.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/types/user.interface.ts#L11)*
 
 Actual website number
 

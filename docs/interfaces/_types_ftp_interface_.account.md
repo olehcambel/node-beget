@@ -21,7 +21,7 @@
 
 • **homedir**: *string*
 
-*Defined in [src/types/ftp.interface.ts:12](https://github.com/olehcambel/node-beget/blob/530258f/src/types/ftp.interface.ts#L12)*
+*Defined in [src/types/ftp.interface.ts:12](https://github.com/olehcambel/node-beget/blob/f128411/src/types/ftp.interface.ts#L12)*
 
 path to home directory of created account.
 Begins with a slash. (e.g. /site.de/public_html);
@@ -34,7 +34,7 @@ ___
 
 • **login**: *string*
 
-*Defined in [src/types/ftp.interface.ts:20](https://github.com/olehcambel/node-beget/blob/530258f/src/types/ftp.interface.ts#L20)*
+*Defined in [src/types/ftp.interface.ts:20](https://github.com/olehcambel/node-beget/blob/f128411/src/types/ftp.interface.ts#L20)*
 
 **`example`** 'user_acc1';
 
@@ -44,7 +44,7 @@ ___
 
 • **password**: *string*
 
-*Defined in [src/types/ftp.interface.ts:16](https://github.com/olehcambel/node-beget/blob/530258f/src/types/ftp.interface.ts#L16)*
+*Defined in [src/types/ftp.interface.ts:16](https://github.com/olehcambel/node-beget/blob/f128411/src/types/ftp.interface.ts#L16)*
 
 password for new ftp account;
 
@@ -54,7 +54,7 @@ ___
 
 • **suffix**: *string*
 
-*Defined in [src/types/ftp.interface.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/types/ftp.interface.ts#L6)*
+*Defined in [src/types/ftp.interface.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/types/ftp.interface.ts#L6)*
 
 suffix part of login. When passing this parameter, please note
 that the final login in form of "login_suffix" must not exceed 17 characters;

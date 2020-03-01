@@ -19,7 +19,7 @@
 
 • **cpu_time**: *string*
 
-*Defined in [src/types/stat.interface.ts:40](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L40)*
+*Defined in [src/types/stat.interface.ts:40](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L40)*
 
 **`example`** '0'
 
@@ -29,6 +29,6 @@ ___
 
 • **date**: *string*
 
-*Defined in [src/types/stat.interface.ts:44](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L44)*
+*Defined in [src/types/stat.interface.ts:44](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L44)*
 
 **`example`** '2014-06-02 20:00:00'

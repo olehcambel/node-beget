@@ -20,7 +20,7 @@
 
 • **cp**: *string*
 
-*Defined in [src/types/stat.interface.ts:15](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L15)*
+*Defined in [src/types/stat.interface.ts:15](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L15)*
 
 **`example`** '195.257188'
 
@@ -30,7 +30,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/stat.interface.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L11)*
+*Defined in [src/types/stat.interface.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L11)*
 
 the website id is unique within one user.
 
@@ -42,7 +42,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/stat.interface.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L6)*
+*Defined in [src/types/stat.interface.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L6)*
 
 the database name is unique within one user.
 

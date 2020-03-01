@@ -12,16 +12,15 @@
 
 * [input_format](_options_beget_options_.begetrequestoptions.md#input_format)
 * [login](_options_beget_options_.begetrequestoptions.md#login)
-* [output_format](_options_beget_options_.begetrequestoptions.md#output_format)
 * [passwd](_options_beget_options_.begetrequestoptions.md#passwd)
 
 ## Properties
 
 ###  input_format
 
-• **input_format**: *string*
+• **input_format**: *[InputFormat](../modules/_options_beget_options_.md#inputformat)*
 
-*Defined in [src/options/beget-options.ts:12](https://github.com/olehcambel/node-beget/blob/530258f/src/options/beget-options.ts#L12)*
+*Defined in [src/options/beget-options.ts:14](https://github.com/olehcambel/node-beget/blob/f128411/src/options/beget-options.ts#L14)*
 
 ___
 
@@ -29,15 +28,7 @@ ___
 
 • **login**: *string*
 
-*Defined in [src/options/beget-options.ts:9](https://github.com/olehcambel/node-beget/blob/530258f/src/options/beget-options.ts#L9)*
-
-___
-
-###  output_format
-
-• **output_format**: *string*
-
-*Defined in [src/options/beget-options.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/options/beget-options.ts#L11)*
+*Defined in [src/options/beget-options.ts:12](https://github.com/olehcambel/node-beget/blob/f128411/src/options/beget-options.ts#L12)*
 
 ___
 
@@ -45,4 +36,4 @@ ___
 
 • **passwd**: *string*
 
-*Defined in [src/options/beget-options.ts:10](https://github.com/olehcambel/node-beget/blob/530258f/src/options/beget-options.ts#L10)*
+*Defined in [src/options/beget-options.ts:13](https://github.com/olehcambel/node-beget/blob/f128411/src/options/beget-options.ts#L13)*

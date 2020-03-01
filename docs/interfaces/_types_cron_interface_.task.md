@@ -25,7 +25,7 @@
 
 • **command**: *string*
 
-*Defined in [src/types/cron.interface.ts:36](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L36)*
+*Defined in [src/types/cron.interface.ts:36](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L36)*
 
 Command
 
@@ -37,7 +37,7 @@ ___
 
 • **days**: *string*
 
-*Defined in [src/types/cron.interface.ts:21](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L21)*
+*Defined in [src/types/cron.interface.ts:21](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L21)*
 
 Days
 
@@ -49,7 +49,7 @@ ___
 
 • **hours**: *string*
 
-*Defined in [src/types/cron.interface.ts:16](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L16)*
+*Defined in [src/types/cron.interface.ts:16](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L16)*
 
 Hours
 
@@ -61,7 +61,7 @@ ___
 
 • **is_hidden**: *1 | 0*
 
-*Defined in [src/types/cron.interface.ts:41](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L41)*
+*Defined in [src/types/cron.interface.ts:41](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L41)*
 
 task status (active / inactive), type boolean: 0 or 1;
 
@@ -73,7 +73,7 @@ ___
 
 • **minutes**: *string*
 
-*Defined in [src/types/cron.interface.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L11)*
+*Defined in [src/types/cron.interface.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L11)*
 
 Minutes
 
@@ -85,7 +85,7 @@ ___
 
 • **months**: *string*
 
-*Defined in [src/types/cron.interface.ts:26](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L26)*
+*Defined in [src/types/cron.interface.ts:26](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L26)*
 
 Months
 
@@ -97,7 +97,7 @@ ___
 
 • **row_number**: *number*
 
-*Defined in [src/types/cron.interface.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L6)*
+*Defined in [src/types/cron.interface.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L6)*
 
 task ID
 
@@ -109,7 +109,7 @@ ___
 
 • **weekdays**: *string*
 
-*Defined in [src/types/cron.interface.ts:31](https://github.com/olehcambel/node-beget/blob/530258f/src/types/cron.interface.ts#L31)*
+*Defined in [src/types/cron.interface.ts:31](https://github.com/olehcambel/node-beget/blob/f128411/src/types/cron.interface.ts#L31)*
 
 Weekdays
 

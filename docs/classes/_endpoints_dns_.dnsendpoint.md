@@ -28,7 +28,7 @@
 
 \+ **new DnsEndpoint**(`client`: [BegetRequest](_beget_request_.begetrequest.md)): *[DnsEndpoint](_endpoints_dns_.dnsendpoint.md)*
 
-*Defined in [src/endpoints/dns.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/dns.ts#L5)*
+*Defined in [src/endpoints/dns.ts:5](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/dns.ts#L5)*
 
 **Parameters:**
 
@@ -44,7 +44,7 @@ Name | Type |
 
 • **client**: *[BegetRequest](_beget_request_.begetrequest.md)*
 
-*Defined in [src/endpoints/dns.ts:6](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/dns.ts#L6)*
+*Defined in [src/endpoints/dns.ts:6](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/dns.ts#L6)*
 
 ## Methods
 
@@ -52,7 +52,7 @@ Name | Type |
 
 ▸ **changeRecords**(`params`: [ChangeRecords](../modules/_types_dns_interface_.md#changerecords)): *Promise‹boolean›*
 
-*Defined in [src/endpoints/dns.ts:27](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/dns.ts#L27)*
+*Defined in [src/endpoints/dns.ts:27](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/dns.ts#L27)*
 
 // TODO: change records to overloading
 Method changes DNS records for given domain.
@@ -73,7 +73,7 @@ ___
 
 ▸ **getData**(`params`: Pick‹[DomainInfo](../interfaces/_types_dns_interface_.domaininfo.md), "fqdn"›): *Promise‹[DomainInfo](../interfaces/_types_dns_interface_.domaininfo.md)[]›*
 
-*Defined in [src/endpoints/dns.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/dns.ts#L18)*
+*Defined in [src/endpoints/dns.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/dns.ts#L18)*
 
 Method returns information about domain from DNS server.
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **method**<**T**>(`method`: Methods["dns"], `data?`: object): *Promise‹T›*
 
-*Defined in [src/endpoints/dns.ts:11](https://github.com/olehcambel/node-beget/blob/530258f/src/endpoints/dns.ts#L11)*
+*Defined in [src/endpoints/dns.ts:11](https://github.com/olehcambel/node-beget/blob/f128411/src/endpoints/dns.ts#L11)*
 
 **Type parameters:**
 

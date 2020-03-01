@@ -22,7 +22,7 @@
 
 Ƭ **ForwardList**: *Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain" | "mailbox" | "forward_mailbox"›*
 
-*Defined in [src/types/mail.interface.ts:60](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L60)*
+*Defined in [src/types/mail.interface.ts:60](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L60)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 Ƭ **ForwardMailStatus**: *"forward" | "no_forward" | "forward_and_delete"*
 
-*Defined in [src/types/mail.interface.ts:1](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L1)*
+*Defined in [src/types/mail.interface.ts:1](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L1)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 Ƭ **GetMailbox**: *Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "mailbox" | "domain" | "spam_filter_status" | "forward_mail_status"›*
 
-*Defined in [src/types/mail.interface.ts:48](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L48)*
+*Defined in [src/types/mail.interface.ts:48](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L48)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 Ƭ **MailboxSettings**: *Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "mailbox" | "domain" | "spam_filter_status" | "spam_filter" | "forward_mail_status"›*
 
-*Defined in [src/types/mail.interface.ts:55](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L55)*
+*Defined in [src/types/mail.interface.ts:55](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L55)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 Ƭ **SetMailbox**: *Pick‹[Mailbox](../interfaces/_types_mail_interface_.mailbox.md), "domain" | "mailbox" | "mailbox_password"›*
 
-*Defined in [src/types/mail.interface.ts:53](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L53)*
+*Defined in [src/types/mail.interface.ts:53](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L53)*

@@ -20,6 +20,6 @@
 
 • **excludedPaths**: *string[]*
 
-*Defined in [src/types/site.interface.ts:41](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L41)*
+*Defined in [src/types/site.interface.ts:41](https://github.com/olehcambel/node-beget/blob/f128411/src/types/site.interface.ts#L41)*
 
 list of paths in which file changes will be allowed

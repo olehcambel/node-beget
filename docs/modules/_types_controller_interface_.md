@@ -18,4 +18,4 @@
 
 Ƭ **Controller**: *keyof Methods*
 
-*Defined in [src/types/controller.interface.ts:68](https://github.com/olehcambel/node-beget/blob/530258f/src/types/controller.interface.ts#L68)*
+*Defined in [src/types/controller.interface.ts:68](https://github.com/olehcambel/node-beget/blob/f128411/src/types/controller.interface.ts#L68)*

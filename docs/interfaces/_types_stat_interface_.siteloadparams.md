@@ -19,7 +19,7 @@
 
 • **date**: *string*
 
-*Defined in [src/types/stat.interface.ts:28](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L28)*
+*Defined in [src/types/stat.interface.ts:28](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L28)*
 
 **`example`** '2014-05-04'
 
@@ -29,6 +29,6 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/types/stat.interface.ts:24](https://github.com/olehcambel/node-beget/blob/530258f/src/types/stat.interface.ts#L24)*
+*Defined in [src/types/stat.interface.ts:24](https://github.com/olehcambel/node-beget/blob/f128411/src/types/stat.interface.ts#L24)*
 
 **`example`** '0.35'

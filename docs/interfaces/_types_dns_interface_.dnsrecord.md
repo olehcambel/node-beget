@@ -19,7 +19,7 @@
 
 • **priority**: *number*
 
-*Defined in [src/types/dns.interface.ts:9](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L9)*
+*Defined in [src/types/dns.interface.ts:9](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L9)*
 
 **`example`** 10
 
@@ -29,6 +29,6 @@ ___
 
 • **value**: *string | null*
 
-*Defined in [src/types/dns.interface.ts:5](https://github.com/olehcambel/node-beget/blob/530258f/src/types/dns.interface.ts#L5)*
+*Defined in [src/types/dns.interface.ts:5](https://github.com/olehcambel/node-beget/blob/f128411/src/types/dns.interface.ts#L5)*
 
 **`example`** 'ns1.beget.de', '91.106.201.65'

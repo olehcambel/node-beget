@@ -25,7 +25,7 @@
 
 • **domain**: *string*
 
-*Defined in [src/types/mail.interface.ts:13](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L13)*
+*Defined in [src/types/mail.interface.ts:13](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L13)*
 
 domain, where the mailbox is located (e.g. site.de);
 
@@ -37,7 +37,7 @@ ___
 
 • **domain_mailbox**: *string*
 
-*Defined in [src/types/mail.interface.ts:45](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L45)*
+*Defined in [src/types/mail.interface.ts:45](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L45)*
 
 mailbox, which shall be set up as domain mail (e.g. mail@site.de).
 
@@ -49,7 +49,7 @@ ___
 
 • **forward_mail_status**: *[ForwardMailStatus](../modules/_types_mail_interface_.md#forwardmailstatus)*
 
-*Defined in [src/types/mail.interface.ts:32](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L32)*
+*Defined in [src/types/mail.interface.ts:32](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L32)*
 
 forwarding operation mode for mailbox.
 
@@ -66,7 +66,7 @@ ___
 
 • **forward_mailbox**: *string*
 
-*Defined in [src/types/mail.interface.ts:40](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L40)*
+*Defined in [src/types/mail.interface.ts:40](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L40)*
 
 mailbox, where messages will be forwarded to.
 
@@ -76,7 +76,7 @@ ___
 
 • **mailbox**: *string*
 
-*Defined in [src/types/mail.interface.ts:8](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L8)*
+*Defined in [src/types/mail.interface.ts:8](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L8)*
 
 mailbox name (e.g. info);
 
@@ -88,7 +88,7 @@ ___
 
 • **mailbox_password**: *string*
 
-*Defined in [src/types/mail.interface.ts:36](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L36)*
+*Defined in [src/types/mail.interface.ts:36](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L36)*
 
 mailbox password.
 
@@ -98,7 +98,7 @@ ___
 
 • **spam_filter**: *number*
 
-*Defined in [src/types/mail.interface.ts:17](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L17)*
+*Defined in [src/types/mail.interface.ts:17](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L17)*
 
 spam filtering level (0 - max. filtering, 100 - minimum);
 
@@ -108,7 +108,7 @@ ___
 
 • **spam_filter_status**: *1 | 0*
 
-*Defined in [src/types/mail.interface.ts:22](https://github.com/olehcambel/node-beget/blob/530258f/src/types/mail.interface.ts#L22)*
+*Defined in [src/types/mail.interface.ts:22](https://github.com/olehcambel/node-beget/blob/f128411/src/types/mail.interface.ts#L22)*
 
 spam filter operation status (0/1);
 

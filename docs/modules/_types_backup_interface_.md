@@ -21,4 +21,4 @@
 
 Ƭ **LogTaskOperation**: *"restore" | "download"*
 
-*Defined in [src/types/backup.interface.ts:35](https://github.com/olehcambel/node-beget/blob/530258f/src/types/backup.interface.ts#L35)*
+*Defined in [src/types/backup.interface.ts:35](https://github.com/olehcambel/node-beget/blob/f128411/src/types/backup.interface.ts#L35)*

@@ -20,7 +20,7 @@
 
 • **domains**: *[Domain](_types_site_interface_.domain.md)[]*
 
-*Defined in [src/types/site.interface.ts:23](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L23)*
+*Defined in [src/types/site.interface.ts:23](https://github.com/olehcambel/node-beget/blob/f128411/src/types/site.interface.ts#L23)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [src/types/site.interface.ts:18](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L18)*
+*Defined in [src/types/site.interface.ts:18](https://github.com/olehcambel/node-beget/blob/f128411/src/types/site.interface.ts#L18)*
 
 webiste id, type int;
 
@@ -40,6 +40,6 @@ ___
 
 • **path**: *"site.de/public_html"*
 
-*Defined in [src/types/site.interface.ts:22](https://github.com/olehcambel/node-beget/blob/530258f/src/types/site.interface.ts#L22)*
+*Defined in [src/types/site.interface.ts:22](https://github.com/olehcambel/node-beget/blob/f128411/src/types/site.interface.ts#L22)*
 
 **`example`** 'site.de/public_html'

@@ -3,7 +3,7 @@ export interface Task {
      * task ID
      * @example '1000'
      */
-    row_number: number;
+    row_number: number; // string
     /**
      * Minutes
      * @example '*'

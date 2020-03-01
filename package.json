@@ -1,6 +1,6 @@
 {
   "name": "node-beget",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client library for accessing Beget API",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -12,7 +12,7 @@
     "lint": "eslint 'src/**/*.ts'",
     "build": "tsc -p tsconfig.build.json",
     "doc": "node ./typedoc",
-    "prepush": "npm run lint && npm run build && npm test && npm run format"
+    "prepush": "npm run lint && npm run build && npm test"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "@types/qs": "^6.9.1",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
-    "bottleneck": "^2.19.5",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",

@@ -11,12 +11,16 @@ describe('BegetRequest', () => {
 
     describe('login', () => {
         it('saves beget config', () => {
-            const begetConfig: BegetOptions = { login: 'login', password: 'password' };
+            const begetConfig: BegetOptions = {
+                login: 'login',
+                password: 'password',
+                httpMethod: 'POST',
+            };
             const expected: BegetRequestOptions = {
                 login: 'login',
                 passwd: 'password',
-                input_format: 'json',
-                output_format: 'json',
+                input_format: 'plain',
+                // output_format: 'json',
             };
             const begetRequest = new BegetRequest(begetConfig);
 
@@ -38,8 +42,8 @@ describe('BegetRequest', () => {
                 searchParams: {
                     login: begetConfig.login,
                     passwd: begetConfig.password,
-                    input_format: 'json',
-                    output_format: 'json',
+                    input_format: 'plain',
+                    // output_format: 'json',
                     input_data: qs.stringify(data),
                 },
                 url: [section, method].join('/'),
@@ -65,16 +69,18 @@ describe('BegetRequest', () => {
                     domains: [],
                 },
             ];
-            const fullResponse: BegetCommon.ResponseSuccess<any> = {
+            const fullResponse: BegetCommon.ResponseSuccess<typeof expected> = {
                 status: 'success',
                 answer: {
                     status: 'success',
                     result: expected,
                 },
             };
-            beget['request'].get = jest
-                .fn()
-                .mockReturnValue(Promise.resolve(fullResponse));
+
+            // jest.spyOn(beget, 'request', 'get').mockReturnValue(fullResponse)
+            Object.defineProperty(beget, 'request', {
+                value: jest.fn().mockReturnValue(Promise.resolve(fullResponse)),
+            });
 
             const result = await beget.api(section, method);
 
@@ -89,9 +95,9 @@ describe('BegetRequest', () => {
                 error_code: 'NO_SUCH_METHOD',
             };
 
-            beget['request'].get = jest
-                .fn()
-                .mockReturnValue(Promise.resolve(fullResponse));
+            Object.defineProperty(beget, 'request', {
+                value: jest.fn().mockReturnValue(Promise.resolve(fullResponse)),
+            });
 
             await expect(beget.api(section, method)).rejects.toBeInstanceOf(BegetError);
             // check errors
@@ -106,16 +112,15 @@ describe('BegetRequest', () => {
                     errors: [
                         {
                             error_code: 'INVALID_DATA',
-                            error_text:
-                                'Login length cannot be greater than 12 characters',
+                            error_text: 'Login length cannot be greater than 12 characters',
                         },
                     ],
                 },
             };
 
-            beget['request'].get = jest
-                .fn()
-                .mockReturnValue(Promise.resolve(fullResponse));
+            Object.defineProperty(beget, 'request', {
+                value: jest.fn().mockReturnValue(Promise.resolve(fullResponse)),
+            });
 
             await expect(beget.api(section, method)).rejects.toBeInstanceOf(BegetError);
         });
@@ -127,19 +132,21 @@ describe('BegetRequest', () => {
                 invalidCode: 'invalidCode',
             };
 
-            beget['request'].get = jest
-                .fn()
-                .mockReturnValue(Promise.resolve(fullResponse));
+            Object.defineProperty(beget, 'request', {
+                value: jest.fn().mockReturnValue(Promise.resolve(fullResponse)),
+            });
 
             await expect(beget.api(section, method)).rejects.toBeInstanceOf(Error);
         });
     });
 
     it('does handle non 200 statusCode response', async () => {
-        const tune = new BegetRequest(begetConfig);
+        const beget = new BegetRequest(begetConfig);
         const requestError = { message: 'not found', options: { uri: 'invalid' } };
-        tune['request'].get = jest.fn().mockReturnValue(Promise.reject(requestError));
+        Object.defineProperty(beget, 'request', {
+            value: jest.fn().mockReturnValue(Promise.reject(requestError)),
+        });
 
-        await expect(tune.api(section, method)).rejects.toBeInstanceOf(Error);
+        await expect(beget.api(section, method)).rejects.toBeInstanceOf(Error);
     });
 });

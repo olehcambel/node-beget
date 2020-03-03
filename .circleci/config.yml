@@ -61,8 +61,22 @@ jobs:
     test-node-default:
         executor:
             name: node/default
-        <<: *shared-test-steps
+
         steps:
+            - checkout
+            - restore_cache:
+                  <<: *cache-options
+            - run:
+                  name: rebuild packages for this node version
+                  command: npm rebuild
+            - run:
+                  name: display-node-version
+                  command: node --version
+            - run:
+                  name: test
+                  command: npm test
+                  environment:
+                      NODE_ENV: test
             - coveralls/upload
 
 # Run all the tests is parallel

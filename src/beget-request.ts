@@ -1,21 +1,20 @@
 import got from 'got';
-import { OptionsOfDefaultResponseBody, Got } from 'got/dist/source/create';
+import { Got, OptionsOfDefaultResponseBody } from 'got/dist/source/create';
 import * as qs from 'qs';
 import { format } from 'util';
 import { BegetError } from './beget.error';
-import { BegetOptions, BegetRequestOptions } from './options/beget-options';
+import { BegetCredentials, BegetOptions, RequestOptions } from './options/beget-options';
 import * as BegetCommon from './types/common.interface';
 import * as Beget from './types/controller.interface';
 
 export class BegetRequest {
     private request: Got;
-    private readonly config: BegetRequestOptions;
+    private readonly credentials: BegetCredentials;
 
     constructor(config: BegetOptions) {
-        this.config = {
+        this.credentials = {
             login: config.login,
             passwd: config.password,
-            input_format: 'plain',
         };
 
         this.request = got.extend({
@@ -68,21 +67,17 @@ export class BegetRequest {
          * // TODO: add support for input_format=json by using JSON.stringify
          *  and if input_format=json && no input_data, then input_data={}
          * json:  input_data=%7B%22hostname%22%3A%22test-domain%22%2C%22zone_id%22%3A1%7D
-         * plain: input_data=hostname%3Dtest-domain%26zone_id%3D1
+         * plain: hostname%3Dtest-domain%26zone_id%3D1
          *
-         * searchParams: { ...this.config, input_data: JSON.stringify(data) },
+         * searchParams: { ...this.credentials, input_data: JSON.stringify(data) },
          */
-        const searchParams = data
-            ? { ...this.config, input_data: qs.stringify(data) }
-            : {
-                  login: this.config.login,
-                  passwd: this.config.passwd,
-                  input_format: this.config.input_format,
-              };
+        const searchParams: RequestOptions = data
+            ? { ...this.credentials, ...data }
+            : this.credentials;
 
         const options: OptionsOfDefaultResponseBody = {
             url: `${section}/${method}`,
-            searchParams,
+            searchParams: qs.stringify(searchParams),
         };
 
         return this.safeRequest(options);

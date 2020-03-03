@@ -8,7 +8,7 @@ export interface AvarageLoad {
      * the website id is unique within one user.
      * @example '299163'
      */
-    id: string;
+    id: number;
     /**
      * @example '195.257188'
      */

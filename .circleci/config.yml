@@ -1,22 +1,86 @@
 version: 2.1
+
+# Define common steps all parts of the test workflow use
+references:
+    ignored-branches: &ignored-branches
+        branches:
+            ignore:
+                - gh-pages
+
+    cache-options: &cache-options
+        key: package-cache-{{ .Branch }}-{{ .Revision }}
+
+    shared-test-steps: &shared-test-steps
+        steps:
+            - checkout
+            - restore_cache:
+                  <<: *cache-options
+            - run:
+                  name: rebuild packages for this node version
+                  command: npm rebuild
+            - run:
+                  name: display-node-version
+                  command: node --version
+            - run:
+                  name: test
+                  command: npm test
+                  environment:
+                      NODE_ENV: test
+
 orbs:
-  node: circleci/node@1.1.6
-  coveralls: coveralls/coveralls@1.0.4
+    node: circleci/node@1.1.6
+    coveralls: coveralls/coveralls@1.0.4
+
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm run build
-            - run: npm run lint
-            - run: npm test
-      - coveralls/upload
-    
+    build:
+        executor:
+            name: node/default
+        steps:
+            - checkout
+            - restore_cache:
+                <<: *cache-options
+            - run:
+                  name: npm-install
+                  command: npm install
+            - save_cache:
+                <<: *cache-options
+                paths:
+                    - ./node_modules
+
+    linter:
+        executor:
+            name: node/default
+        steps:
+            - checkout
+            - restore_cache:
+                <<: *cache-options
+            - run:
+                  name: linter
+                  command: npm run lint
+
+    test-node-default:
+        executor:
+            name: node/default
+        <<: *shared-test-steps
+        steps:
+            - coveralls/upload
+
+# Run all the tests is parallel
 workflows:
-  build-and-test:
-      jobs:
-        - build-and-test
+    build-and-test:
+        jobs:
+            - build:
+                  filters:
+                      <<: *ignored-branches
+
+            - linter:
+                  filters:
+                      <<: *ignored-branches
+                  requires:
+                      - build
+
+            - test-node-default:
+                  filters:
+                      <<: *ignored-branches
+                  requires:
+                      - linter

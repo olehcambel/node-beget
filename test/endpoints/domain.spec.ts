@@ -56,7 +56,7 @@ describe('Domain endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
-        await endpoint.delete({ id: STRING });
+        await endpoint.delete({ id: ID });
 
         done();
     });
@@ -74,7 +74,7 @@ describe('Domain endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
-        await endpoint.addSubdomainVirtual({ domain_id: STRING, subdomain: STRING });
+        await endpoint.addSubdomainVirtual({ domain_id: ID, subdomain: STRING });
 
         done();
     });
@@ -83,7 +83,7 @@ describe('Domain endpoint', () => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
-        await endpoint.deleteSubdomain({ id: STRING });
+        await endpoint.deleteSubdomain({ id: ID });
 
         done();
     });

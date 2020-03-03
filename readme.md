@@ -1,6 +1,4 @@
-## Introduction
-
-> [Beget](https://beget.com/en) wrapper for NodeJS. BegetAPI will allow to use most features of the administration panel directly from your own scripts, content management systems (CMS) and other software products.
+## node-beget
 
 <!-- [![npm package](https://nodei.co/npm/node-beget.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/node-beget/) -->
 
@@ -8,6 +6,8 @@
 [![CircleCI](https://circleci.com/gh/olehcambel/node-beget.svg?style=svg)](https://circleci.com/gh/olehcambel/node-beget)
 [![Coverage Status](https://coveralls.io/repos/github/olehcambel/node-beget/badge.svg?branch=master)](https://coveralls.io/github/olehcambel/node-beget?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/olehcambel/node-beget/badge.svg?targetFile=package.json)](https://snyk.io/test/github/olehcambel/node-beget?targetFile=package.json)
+
+> [Beget](https://beget.com/en) wrapper for NodeJS. BegetAPI will allow to use most features of the administration panel directly from your own scripts, content management systems (CMS) and other software products.
 
 ### What can I do using Beget.API?
 
@@ -22,7 +22,7 @@
 
 ## Documentation
 
-[See](./docs/globals.md) documentation on endpoints in details
+[See](https://github.com/olehcambel/node-beget.git/globals) documentation on endpoints in details
 
 ## example usage
 

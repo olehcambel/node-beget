@@ -6,7 +6,7 @@ export interface Domain {
      * domain ID
      * @example '132456'
      */
-    id: string;
+    id: number;
     /**
      * full domain name
      * @example 'mylogin.bget.de'
@@ -80,7 +80,7 @@ interface Zone {
     /**
      * zone ID
      */
-    id: string;
+    id: number;
     /**
      * zone name
      * @example 'de'
@@ -135,7 +135,7 @@ export interface Subdomain {
      * subdomain ID
      * @example '132456'
      */
-    id: string;
+    id: number;
     /**
      * full subdomain name
      * @example 'subodmain.domain.de'
@@ -145,7 +145,7 @@ export interface Subdomain {
      * parent domain ID
      * @example '12345'
      */
-    domain_id: string;
+    domain_id: number;
 }
 
 export interface AddSubdomain extends Pick<Subdomain, 'domain_id'> {

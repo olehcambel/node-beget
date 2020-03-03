@@ -1,7 +1,7 @@
 import * as qs from 'qs';
 import { BegetRequest } from '../src';
 import { BegetError } from '../src/beget.error';
-import { BegetOptions, BegetRequestOptions } from '../src/options/beget-options';
+import { BegetOptions, BegetCredentials } from '../src/options/beget-options';
 import * as BegetCommon from '../src/types/common.interface';
 import { begetConfig, ID } from './test-utils';
 
@@ -16,15 +16,15 @@ describe('BegetRequest', () => {
                 password: 'password',
                 httpMethod: 'POST',
             };
-            const expected: BegetRequestOptions = {
+            const expected: BegetCredentials = {
                 login: 'login',
                 passwd: 'password',
-                input_format: 'plain',
+                // input_format: 'plain',
                 // output_format: 'json',
             };
             const begetRequest = new BegetRequest(begetConfig);
 
-            expect(begetRequest['config']).toEqual(expected);
+            expect(begetRequest['credentials']).toEqual(expected);
         });
 
         it('does add config to query', async () => {
@@ -39,13 +39,12 @@ describe('BegetRequest', () => {
 
             expect(beget['safeRequest']).toHaveBeenCalled();
             expect(beget['safeRequest']).toHaveBeenCalledWith({
-                searchParams: {
+                searchParams: qs.stringify({
                     login: begetConfig.login,
                     passwd: begetConfig.password,
-                    input_format: 'plain',
-                    // output_format: 'json',
-                    input_data: qs.stringify(data),
-                },
+                    // input_format: 'plain',
+                    ...data,
+                }),
                 url: [section, method].join('/'),
             });
         });

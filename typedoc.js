@@ -1,18 +1,31 @@
+// @ts-check
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { Application } = require('typedoc');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { promises: fsp } = require('fs');
 
-const app = new Application({
-    inputFiles: ['./src'],
-    mode: 'modules',
-    out: 'docs',
-    includeDeclarations: true,
-    excludeExternals: true,
-    mode: 'file',
-    tsconfig: './tsconfig.build.json',
-    readme: 'readme.md',
-    theme: 'markdown',
-    plugin: 'typedoc-plugin-markdown',
-});
+const app = new Application();
 
-app.bootstrap();
-app.generateDocs(app.expandInputFiles(['./src']), 'docs');
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+const boot = async () => {
+    app.bootstrap({
+        inputFiles: ['./src'],
+        // mode: 'modules',
+        mode: 'file',
+        out: 'docs',
+        includeDeclarations: true,
+        excludeExternals: true,
+        tsconfig: './tsconfig.build.json',
+        readme: 'readme.md',
+        theme: 'default',
+    });
+    app.generateDocs(app.expandInputFiles(['./src']), 'docs');
+
+    /**
+     * @see https://github.com/TypeStrong/typedoc/issues/620
+     */
+    await fsp.open('docs/.nojekyll', 'w');
+};
+
+boot();

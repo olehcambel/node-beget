@@ -106,6 +106,7 @@ dist
 # TS build
 dist/
 build/
+docs/
 
 # dependency lock (maybe exclude later)
 package-lock.json

@@ -2,6 +2,10 @@ import { BegetRequest } from '../beget-request';
 import { Methods } from '../types/controller.interface';
 import { ChangeRecords, DomainInfo } from '../types/dns.interface';
 
+// /**
+//  * DnsEndpoint
+//  * @category Endpoints
+//  */
 export class DnsEndpoint {
     constructor(private readonly client: BegetRequest) {}
 

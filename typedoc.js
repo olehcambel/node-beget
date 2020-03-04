@@ -11,14 +11,15 @@ const app = new Application();
 const boot = async () => {
     app.bootstrap({
         inputFiles: ['./src'],
-        // mode: 'modules',
-        mode: 'file',
+        mode: 'modules',
+        // mode: 'file',
         out: 'docs',
         includeDeclarations: true,
         excludeExternals: true,
         tsconfig: './tsconfig.build.json',
         readme: 'readme.md',
         theme: 'default',
+        // categoryOrder: ['Endpoints', '*'],
     });
     app.generateDocs(app.expandInputFiles(['./src']), 'docs');
 

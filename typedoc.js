@@ -26,7 +26,7 @@ const boot = async () => {
     /**
      * @see https://github.com/TypeStrong/typedoc/issues/620
      */
-    await fsp.open('docs/.nojekyll', 'w');
+    await fsp.writeFile('docs/_config.yml', 'include:\n  - "_*_.html"\n  - "_*_.*.html"');
 };
 
 boot();

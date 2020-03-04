@@ -22,7 +22,7 @@
 
 ## Documentation
 
-[See](https://github.com/olehcambel/node-beget.git/globals) documentation on endpoints in details
+[See](https://olehcambel.github.io/node-beget/globals.html) documentation on endpoints in details
 
 ## example usage
 

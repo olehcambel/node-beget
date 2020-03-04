@@ -1,35 +1,33 @@
 version: 2.1
 
+orbs:
+    node: circleci/node@1.1.6
+    coveralls: coveralls/coveralls@1.0.4
+
 # Define common steps all parts of the test workflow use
 references:
-    ignored-branches: &ignored-branches
+    ignore-gh-pages: &ignore-gh-pages
         branches:
             ignore:
                 - gh-pages
 
-    cache-options: &cache-options
-        key: package-cache-{{ .Branch }}-{{ .Revision }}
-
-    shared-test-steps: &shared-test-steps
+commands:
+    shared-test-steps:
         steps:
             - checkout
-            - restore_cache:
-                  <<: *cache-options
-            - run:
-                  name: rebuild packages for this node version
-                  command: npm rebuild
-            - run:
-                  name: display-node-version
-                  command: node --version
-            - run:
-                  name: test
-                  command: npm test
-                  environment:
-                      NODE_ENV: test
-
-orbs:
-    node: circleci/node@1.1.6
-    coveralls: coveralls/coveralls@1.0.4
+            - node/with-cache:
+                  steps:
+                      - run:
+                            name: rebuild packages for this node version
+                            command: npm rebuild
+                      - run:
+                            name: display-node-version
+                            command: node --version
+                      - run:
+                            name: test
+                            command: npm test
+                            environment:
+                                NODE_ENV: test
 
 jobs:
     build:
@@ -37,46 +35,43 @@ jobs:
             name: node/default
         steps:
             - checkout
-            - restore_cache:
-                <<: *cache-options
-            - run:
-                  name: npm-install
-                  command: npm install
-            - save_cache:
-                <<: *cache-options
-                paths:
-                    - ./node_modules
+            - node/with-cache:
+                  steps:
+                      - run:
+                            name: npm-install
+                            command: npm install
 
     linter:
         executor:
             name: node/default
         steps:
             - checkout
-            - restore_cache:
-                <<: *cache-options
-            - run:
-                  name: linter
-                  command: npm run lint
+            - node/with-cache:
+                  steps:
+                      - run:
+                            name: linter
+                            command: npm run lint
+
+    deploy-docs-website:
+        executor:
+            name: node/default
+        steps:
+            - add_ssh_keys:
+                  fingerprints:
+                      - '8d:2f:92:78:66:bb:eb:af:2d:bf:5f:99:fc:28:cc:8f'
+            - checkout
+            - node/with-cache:
+                  steps:
+                      - run:
+                            name: deploy docs
+                            command: npm run doc
 
     test-node-default:
         executor:
             name: node/default
-
         steps:
             - checkout
-            - restore_cache:
-                  <<: *cache-options
-            - run:
-                  name: rebuild packages for this node version
-                  command: npm rebuild
-            - run:
-                  name: display-node-version
-                  command: node --version
-            - run:
-                  name: test
-                  command: npm test
-                  environment:
-                      NODE_ENV: test
+            - shared-test-steps
             - coveralls/upload
 
 # Run all the tests is parallel
@@ -85,16 +80,24 @@ workflows:
         jobs:
             - build:
                   filters:
-                      <<: *ignored-branches
+                      <<: *ignore-gh-pages
 
             - linter:
                   filters:
-                      <<: *ignored-branches
+                      <<: *ignore-gh-pages
                   requires:
                       - build
 
             - test-node-default:
                   filters:
-                      <<: *ignored-branches
+                      <<: *ignore-gh-pages
                   requires:
                       - linter
+
+            - deploy-docs-website:
+                  filters:
+                      branches:
+                          only:
+                              - master
+                  requires:
+                      - test-node-default

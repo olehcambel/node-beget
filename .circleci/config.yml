@@ -56,10 +56,15 @@ jobs:
         executor:
             name: node/default
         steps:
+            - checkout
+            - run:
+                name: Install and configure dependencies
+                command: |
+                    git config user.email "nickcambel5@gmail.com"
+                    git config user.name "ci-build"
             - add_ssh_keys:
                   fingerprints:
                       - '8d:2f:92:78:66:bb:eb:af:2d:bf:5f:99:fc:28:cc:8f'
-            - checkout
             - node/with-cache:
                   steps:
                       - run:

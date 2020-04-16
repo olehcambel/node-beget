@@ -3,7 +3,7 @@ import { begetConfig, EMAIL, ID, STRING } from '../test-utils';
 
 describe('Cron endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new CronEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Cron endpoint', () => {
         });
     });
 
-    it('should exist getList()', async done => {
+    it('should exist getList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Cron endpoint', () => {
         done();
     });
 
-    it('should exist add()', async done => {
+    it('should exist add()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);
@@ -50,7 +50,7 @@ describe('Cron endpoint', () => {
         done();
     });
 
-    it('should exist delete()', async done => {
+    it('should exist delete()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);
@@ -59,7 +59,7 @@ describe('Cron endpoint', () => {
         done();
     });
 
-    it('should exist changeHiddenState()', async done => {
+    it('should exist changeHiddenState()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);
@@ -68,7 +68,7 @@ describe('Cron endpoint', () => {
         done();
     });
 
-    it('should exist getEmail()', async done => {
+    it('should exist getEmail()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);
@@ -77,7 +77,7 @@ describe('Cron endpoint', () => {
         done();
     });
 
-    it('should exist setEmail()', async done => {
+    it('should exist setEmail()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new CronEndpoint(beget);

@@ -3,7 +3,7 @@ import { begetConfig, STRING, ID } from '../test-utils';
 
 describe('Dns endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new DnsEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Dns endpoint', () => {
         });
     });
 
-    it('should exist getData()', async done => {
+    it('should exist getData()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist changeRecords()', async done => {
+    it('should exist changeRecords()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DnsEndpoint(beget);

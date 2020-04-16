@@ -3,7 +3,7 @@ import { begetConfig, STRING, ID } from '../test-utils';
 
 describe('Dns endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new MysqlEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Dns endpoint', () => {
         });
     });
 
-    it('should exist getList()', async done => {
+    it('should exist getList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist addDb()', async done => {
+    it('should exist addDb()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist addAccess()', async done => {
+    it('should exist addAccess()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist dropDb()', async done => {
+    it('should exist dropDb()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);
@@ -61,7 +61,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist dropAccess()', async done => {
+    it('should exist dropAccess()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);
@@ -70,7 +70,7 @@ describe('Dns endpoint', () => {
         done();
     });
 
-    it('should exist changeAccessPassword()', async done => {
+    it('should exist changeAccessPassword()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MysqlEndpoint(beget);

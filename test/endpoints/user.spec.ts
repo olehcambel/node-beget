@@ -3,7 +3,7 @@ import { begetConfig, ID } from '../test-utils';
 
 describe('User endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new UserEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('User endpoint', () => {
         });
     });
 
-    it('should exist getAccountInfo()', async done => {
+    it('should exist getAccountInfo()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new UserEndpoint(beget);
@@ -34,7 +34,7 @@ describe('User endpoint', () => {
         done();
     });
 
-    it('should exist toggleSsh()', async done => {
+    it('should exist toggleSsh()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new UserEndpoint(beget);

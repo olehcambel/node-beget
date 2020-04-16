@@ -3,7 +3,7 @@ import { begetConfig, BOOLEAN, ID, STRING } from '../test-utils';
 
 describe('Domain endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new DomainEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Domain endpoint', () => {
         });
     });
 
-    it('should exist getList()', async done => {
+    it('should exist getList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist getZoneList()', async done => {
+    it('should exist getZoneList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist addVirtual()', async done => {
+    it('should exist addVirtual()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist delete()', async done => {
+    it('should exist delete()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -61,7 +61,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist getSubdomainList()', async done => {
+    it('should exist getSubdomainList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -70,7 +70,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist addSubdomainVirtual()', async done => {
+    it('should exist addSubdomainVirtual()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -79,7 +79,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist deleteSubdomain()', async done => {
+    it('should exist deleteSubdomain()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -88,7 +88,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist checkDomainToRegister()', async done => {
+    it('should exist checkDomainToRegister()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -97,7 +97,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist getPhpVersion()', async done => {
+    it('should exist getPhpVersion()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -106,7 +106,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist changePhpVersion()', async done => {
+    it('should exist changePhpVersion()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -119,7 +119,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist getDirectives()', async done => {
+    it('should exist getDirectives()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -128,7 +128,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist addDirectives()', async done => {
+    it('should exist addDirectives()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);
@@ -140,7 +140,7 @@ describe('Domain endpoint', () => {
         done();
     });
 
-    it('should exist removeDirectives()', async done => {
+    it('should exist removeDirectives()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new DomainEndpoint(beget);

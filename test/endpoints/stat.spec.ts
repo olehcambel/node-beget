@@ -3,7 +3,7 @@ import { begetConfig, ID, STRING } from '../test-utils';
 
 describe('Stat endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new StatEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Stat endpoint', () => {
         });
     });
 
-    it('should exist getSiteListLoad()', async done => {
+    it('should exist getSiteListLoad()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new StatEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Stat endpoint', () => {
         done();
     });
 
-    it('should exist getDbListLoad()', async done => {
+    it('should exist getDbListLoad()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new StatEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Stat endpoint', () => {
         done();
     });
 
-    it('should exist getSiteLoad()', async done => {
+    it('should exist getSiteLoad()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new StatEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Stat endpoint', () => {
         done();
     });
 
-    it('should exist getDbLoad()', async done => {
+    it('should exist getDbLoad()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new StatEndpoint(beget);

@@ -3,7 +3,7 @@ import { begetConfig, ID, STRING } from '../test-utils';
 
 describe('Site endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new SiteEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Site endpoint', () => {
         });
     });
 
-    it('should exist getList()', async done => {
+    it('should exist getList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist add()', async done => {
+    it('should exist add()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist delete()', async done => {
+    it('should exist delete()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist linkDomain()', async done => {
+    it('should exist linkDomain()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -61,7 +61,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist unlinkDomain()', async done => {
+    it('should exist unlinkDomain()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -70,7 +70,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist freeze()', async done => {
+    it('should exist freeze()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -79,7 +79,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist unfreeze()', async done => {
+    it('should exist unfreeze()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);
@@ -88,7 +88,7 @@ describe('Site endpoint', () => {
         done();
     });
 
-    it('should exist isSiteFrozen()', async done => {
+    it('should exist isSiteFrozen()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new SiteEndpoint(beget);

@@ -3,7 +3,7 @@ import { begetConfig, ID, STRING } from '../test-utils';
 
 describe('Mail endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new MailEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Mail endpoint', () => {
         });
     });
 
-    it('should exist getMailboxList()', async done => {
+    it('should exist getMailboxList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist changeMailboxPassword()', async done => {
+    it('should exist changeMailboxPassword()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -47,7 +47,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist createMailbox()', async done => {
+    it('should exist createMailbox()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -60,7 +60,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist dropMailbox()', async done => {
+    it('should exist dropMailbox()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -69,7 +69,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist changeMailboxSettings()', async done => {
+    it('should exist changeMailboxSettings()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -84,7 +84,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist forwardListAddMailbox()', async done => {
+    it('should exist forwardListAddMailbox()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -97,7 +97,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist forwardListDeleteMailbox()', async done => {
+    it('should exist forwardListDeleteMailbox()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -110,7 +110,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist forwardListShow()', async done => {
+    it('should exist forwardListShow()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -119,7 +119,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist setDomainMail()', async done => {
+    it('should exist setDomainMail()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);
@@ -128,7 +128,7 @@ describe('Mail endpoint', () => {
         done();
     });
 
-    it('should exist clearDomainMail()', async done => {
+    it('should exist clearDomainMail()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new MailEndpoint(beget);

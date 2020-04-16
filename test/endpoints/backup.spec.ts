@@ -3,7 +3,7 @@ import { begetConfig, ID, STRING } from '../test-utils';
 
 describe('Backup endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new BackupEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Backup endpoint', () => {
         });
     });
 
-    it('should exist getFileBackupList()', async done => {
+    it('should exist getFileBackupList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist getMysqlBackupList()', async done => {
+    it('should exist getMysqlBackupList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist getFileList()', async done => {
+    it('should exist getFileList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist getMysqlList()', async done => {
+    it('should exist getMysqlList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -61,7 +61,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist restoreFile()', async done => {
+    it('should exist restoreFile()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -70,7 +70,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist restoreMysql()', async done => {
+    it('should exist restoreMysql()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -79,7 +79,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist downloadFile()', async done => {
+    it('should exist downloadFile()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -88,7 +88,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist downloadMysql()', async done => {
+    it('should exist downloadMysql()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);
@@ -97,7 +97,7 @@ describe('Backup endpoint', () => {
         done();
     });
 
-    it('should exist getLog()', async done => {
+    it('should exist getLog()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new BackupEndpoint(beget);

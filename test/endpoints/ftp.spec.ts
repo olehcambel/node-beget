@@ -3,7 +3,7 @@ import { begetConfig, STRING, ID } from '../test-utils';
 
 describe('Ftp endpoint', () => {
     describe('init', () => {
-        it('init without errors', done => {
+        it('init without errors', (done) => {
             const beget = new BegetRequest(begetConfig);
             new FtpEndpoint(beget);
 
@@ -25,7 +25,7 @@ describe('Ftp endpoint', () => {
         });
     });
 
-    it('should exist getList()', async done => {
+    it('should exist getList()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new FtpEndpoint(beget);
@@ -34,7 +34,7 @@ describe('Ftp endpoint', () => {
         done();
     });
 
-    it('should exist add()', async done => {
+    it('should exist add()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new FtpEndpoint(beget);
@@ -43,7 +43,7 @@ describe('Ftp endpoint', () => {
         done();
     });
 
-    it('should exist changePassword()', async done => {
+    it('should exist changePassword()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new FtpEndpoint(beget);
@@ -52,7 +52,7 @@ describe('Ftp endpoint', () => {
         done();
     });
 
-    it('should exist delete()', async done => {
+    it('should exist delete()', async (done) => {
         const beget = new BegetRequest(begetConfig);
         beget.api = jest.fn();
         const endpoint = new FtpEndpoint(beget);

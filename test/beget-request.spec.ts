@@ -1,7 +1,8 @@
+import * as nock from 'nock';
 import * as qs from 'qs';
 import { BegetRequest } from '../src';
 import { BegetError } from '../src/beget.error';
-import { BegetOptions, BegetCredentials } from '../src/options/beget-options';
+import { BegetCredentials, BegetOptions } from '../src/options/beget-options';
 import * as BegetCommon from '../src/types/common.interface';
 import { begetConfig, ID } from './test-utils';
 
@@ -147,5 +148,70 @@ describe('BegetRequest', () => {
         });
 
         await expect(beget.api(section, method)).rejects.toBeInstanceOf(Error);
+    });
+
+    describe('safeRequest with nock', () => {
+        afterEach(() => {
+            nock.cleanAll();
+        });
+
+        it('does handle 404 status', async (done) => {
+            const beget = new BegetRequest(begetConfig);
+            nock('https://api.beget.com/api')
+                .get(`/${section}/${method}`)
+                .query({
+                    login: begetConfig.login,
+                    passwd: begetConfig.password,
+                })
+                .reply(404, { message: 'invalid url' });
+
+            try {
+                await beget.api(section, method);
+            } catch (error) {
+                expect(error).toBeInstanceOf(Error);
+                expect(error.message).toMatch(/Response code 404 \(Not Found\)/);
+                done();
+            }
+        });
+
+        it('does return correct result', async () => {
+            const beget = new BegetRequest(begetConfig);
+            const expected = [
+                {
+                    id: '125',
+                    path: 'site.de/public_html',
+                    domains: [
+                        {
+                            id: '12345',
+                            fqdn: 'site.de',
+                        },
+                    ],
+                },
+                {
+                    id: '124',
+                    path: 'facebook.com/public_html',
+                    domains: [],
+                },
+            ];
+            const fullResponse: BegetCommon.ResponseSuccess<typeof expected> = {
+                status: 'success',
+                answer: {
+                    status: 'success',
+                    result: expected,
+                },
+            };
+
+            nock('https://api.beget.com/api')
+                .get(`/${section}/${method}`)
+                .query({
+                    login: begetConfig.login,
+                    passwd: begetConfig.password,
+                    data: 'data',
+                })
+                .reply(200, fullResponse);
+            const result = await beget.api(section, method, { data: 'data' });
+
+            expect(result).toEqual(expected);
+        });
     });
 });

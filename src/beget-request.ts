@@ -1,5 +1,4 @@
-import got from 'got';
-import { Got, OptionsOfDefaultResponseBody } from 'got/dist/source/create';
+import got, { Got, Options, OptionsOfJSONResponseBody } from 'got';
 import * as qs from 'qs';
 import { format } from 'util';
 import { BegetError } from './beget.error';
@@ -26,14 +25,14 @@ export class BegetRequest {
     }
     // constructor(private readonly config: BegetOptions) {}
 
-    private async safeRequest<R>(options: OptionsOfDefaultResponseBody): Promise<R> {
+    private async safeRequest<R>(options: Options): Promise<R> {
         const response = await this.request<
             BegetCommon.ResponseSuccess<R> | BegetCommon.ResponseError
-        >(
-            options as Types.Merge<OptionsOfDefaultResponseBody, { resolveBodyOnly: true }>
-        ).catch(({ message, options }) => {
-            throw new Error(`Invalid response status:\n${format({ message, options })}`);
-        });
+        >(options as Types.Merge<OptionsOfJSONResponseBody, { resolveBodyOnly: true }>).catch(
+            ({ message, options }) => {
+                throw new Error(`Invalid response status: ${message}\n${format(options)}`);
+            }
+        );
 
         if (response.status === 'success') {
             const { answer } = response;
@@ -75,7 +74,7 @@ export class BegetRequest {
             ? { ...this.credentials, ...data }
             : this.credentials;
 
-        const options: OptionsOfDefaultResponseBody = {
+        const options: Options = {
             url: `${section}/${method}`,
             searchParams: qs.stringify(searchParams),
         };
